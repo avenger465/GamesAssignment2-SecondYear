@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\GamesAssignmentTwo.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{C770CA5D-0921-4813-912E-35296EE7D6C8}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\GamesAssignmentTwo.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\GamesAssignmentTwoEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{10BF4A23-2DA3-4D69-BAAB-85388A29CAF1}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\GamesAssignmentTwo">
+      <UniqueIdentifier>{7173B7A6-BDC4-4BD2-94D3-B06BFA46407E}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\GamesAssignmentTwo\Checkpoint.cpp">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GamesAssignmentTwo\Checkpoint.h">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GamesAssignmentTwo\CustomGameInstance.cpp">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GamesAssignmentTwo\CustomGameInstance.h">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GamesAssignmentTwo\FinishZone.cpp">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GamesAssignmentTwo\FinishZone.h">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GamesAssignmentTwo\FixedDoor.cpp">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GamesAssignmentTwo\FixedDoor.h">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\GamesAssignmentTwo\GamesAssignmentTwo.Build.cs">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\GamesAssignmentTwo\GamesAssignmentTwo.cpp">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GamesAssignmentTwo\GamesAssignmentTwo.h">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GamesAssignmentTwo\GamesAssignmentTwoGameModeBase.cpp">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GamesAssignmentTwo\GamesAssignmentTwoGameModeBase.h">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GamesAssignmentTwo\PlayableCharacter.cpp">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GamesAssignmentTwo\PlayableCharacter.h">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GamesAssignmentTwo\RevolvingDoor.cpp">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GamesAssignmentTwo\RevolvingDoor.h">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GamesAssignmentTwo\SpinningBar.cpp">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GamesAssignmentTwo\SpinningBar.h">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

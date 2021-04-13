@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "GamesAssignmentTwo",
+			"Path": "C:\\Users\\aveng\\Desktop\\Games Assignment Two\\GamesAssignmentTwo\\Source\\GamesAssignmentTwo.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "GamesAssignmentTwoEditor",
+			"Path": "C:\\Users\\aveng\\Desktop\\Games Assignment Two\\GamesAssignmentTwo\\Source\\GamesAssignmentTwoEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

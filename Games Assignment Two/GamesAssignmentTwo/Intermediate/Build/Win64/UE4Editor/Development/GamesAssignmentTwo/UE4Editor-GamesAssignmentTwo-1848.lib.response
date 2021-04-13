@@ -1,0 +1,18 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-GamesAssignmentTwo-1848.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\aveng\Desktop\Games Assignment Two\GamesAssignmentTwo\Intermediate\Build\Win64\GamesAssignmentTwoEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\aveng\Desktop\Games Assignment Two\GamesAssignmentTwo\Intermediate\Build\Win64\UE4Editor\Development\GamesAssignmentTwo\GamesAssignmentTwo.cpp.obj"
+"C:\Users\aveng\Desktop\Games Assignment Two\GamesAssignmentTwo\Intermediate\Build\Win64\UE4Editor\Development\GamesAssignmentTwo\GamesAssignmentTwoGameModeBase.cpp.obj"
+"C:\Users\aveng\Desktop\Games Assignment Two\GamesAssignmentTwo\Intermediate\Build\Win64\UE4Editor\Development\GamesAssignmentTwo\PlayableCharacter.cpp.obj"
+"C:\Users\aveng\Desktop\Games Assignment Two\GamesAssignmentTwo\Intermediate\Build\Win64\UE4Editor\Development\GamesAssignmentTwo\GamesAssignmentTwo.init.gen.cpp.obj"
+"C:\Users\aveng\Desktop\Games Assignment Two\GamesAssignmentTwo\Intermediate\Build\Win64\UE4Editor\Development\GamesAssignmentTwo\GamesAssignmentTwoGameModeBase.gen.cpp.obj"
+"C:\Users\aveng\Desktop\Games Assignment Two\GamesAssignmentTwo\Intermediate\Build\Win64\UE4Editor\Development\GamesAssignmentTwo\PlayableCharacter.gen.cpp.obj"
+"C:\Users\aveng\Desktop\Games Assignment Two\GamesAssignmentTwo\Intermediate\Build\Win64\UE4Editor\Development\GamesAssignmentTwo\Default.rc2.res"
+/OUT:"C:\Users\aveng\Desktop\Games Assignment Two\GamesAssignmentTwo\Intermediate\Build\Win64\UE4Editor\Development\GamesAssignmentTwo\UE4Editor-GamesAssignmentTwo-1848.lib"
+/INCLUDE:IMPLEMENT_MODULE_GamesAssignmentTwo
