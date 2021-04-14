@@ -7,6 +7,7 @@
 /IGNORE:4221
 /NODEFAULTLIB
 "C:\Users\aveng\Documents\GitHub\GamesAssignment2-SecondYear\Games Assignment Two\GamesAssignmentTwo\Intermediate\Build\Win64\GamesAssignmentTwoEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\aveng\Documents\GitHub\GamesAssignment2-SecondYear\Games Assignment Two\GamesAssignmentTwo\Intermediate\Build\Win64\UE4Editor\Development\GamesAssignmentTwo\BaseUserWidget.cpp.obj"
 "C:\Users\aveng\Documents\GitHub\GamesAssignment2-SecondYear\Games Assignment Two\GamesAssignmentTwo\Intermediate\Build\Win64\UE4Editor\Development\GamesAssignmentTwo\Checkpoint.cpp.obj"
 "C:\Users\aveng\Documents\GitHub\GamesAssignment2-SecondYear\Games Assignment Two\GamesAssignmentTwo\Intermediate\Build\Win64\UE4Editor\Development\GamesAssignmentTwo\CustomGameInstance.cpp.obj"
 "C:\Users\aveng\Documents\GitHub\GamesAssignment2-SecondYear\Games Assignment Two\GamesAssignmentTwo\Intermediate\Build\Win64\UE4Editor\Development\GamesAssignmentTwo\FinishZone.cpp.obj"
@@ -16,6 +17,7 @@
 "C:\Users\aveng\Documents\GitHub\GamesAssignment2-SecondYear\Games Assignment Two\GamesAssignmentTwo\Intermediate\Build\Win64\UE4Editor\Development\GamesAssignmentTwo\PlayableCharacter.cpp.obj"
 "C:\Users\aveng\Documents\GitHub\GamesAssignment2-SecondYear\Games Assignment Two\GamesAssignmentTwo\Intermediate\Build\Win64\UE4Editor\Development\GamesAssignmentTwo\RevolvingDoor.cpp.obj"
 "C:\Users\aveng\Documents\GitHub\GamesAssignment2-SecondYear\Games Assignment Two\GamesAssignmentTwo\Intermediate\Build\Win64\UE4Editor\Development\GamesAssignmentTwo\SpinningBar.cpp.obj"
+"C:\Users\aveng\Documents\GitHub\GamesAssignment2-SecondYear\Games Assignment Two\GamesAssignmentTwo\Intermediate\Build\Win64\UE4Editor\Development\GamesAssignmentTwo\BaseUserWidget.gen.cpp.obj"
 "C:\Users\aveng\Documents\GitHub\GamesAssignment2-SecondYear\Games Assignment Two\GamesAssignmentTwo\Intermediate\Build\Win64\UE4Editor\Development\GamesAssignmentTwo\Checkpoint.gen.cpp.obj"
 "C:\Users\aveng\Documents\GitHub\GamesAssignment2-SecondYear\Games Assignment Two\GamesAssignmentTwo\Intermediate\Build\Win64\UE4Editor\Development\GamesAssignmentTwo\CustomGameInstance.gen.cpp.obj"
 "C:\Users\aveng\Documents\GitHub\GamesAssignment2-SecondYear\Games Assignment Two\GamesAssignmentTwo\Intermediate\Build\Win64\UE4Editor\Development\GamesAssignmentTwo\FinishZone.gen.cpp.obj"

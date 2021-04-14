@@ -52,7 +52,7 @@ void AFinishZone::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* Ot
 					UCustomGameInstance* GameInstanceRef = Cast<UCustomGameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
 					if (GameInstanceRef != nullptr)
 					{
-						GameInstanceRef->Warp();
+						GameInstanceRef->Warp("EndLevel");
 					}
 				}
 				else

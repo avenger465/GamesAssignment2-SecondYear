@@ -16,11 +16,15 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define GamesAssignmentTwo_Source_GamesAssignmentTwo_CustomGameInstance_h_19_SPARSE_DATA
 #define GamesAssignmentTwo_Source_GamesAssignmentTwo_CustomGameInstance_h_19_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execJoin); \
+	DECLARE_FUNCTION(execHost); \
 	DECLARE_FUNCTION(execWarp);
 
 
 #define GamesAssignmentTwo_Source_GamesAssignmentTwo_CustomGameInstance_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execJoin); \
+	DECLARE_FUNCTION(execHost); \
 	DECLARE_FUNCTION(execWarp);
 
 

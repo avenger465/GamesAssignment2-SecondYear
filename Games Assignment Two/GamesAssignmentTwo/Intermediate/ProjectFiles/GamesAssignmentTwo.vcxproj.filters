@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\GamesAssignmentTwo.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{178E726F-0275-428F-BEAA-04F6CFCF2569}</UniqueIdentifier>
+      <UniqueIdentifier>{EF4B0711-BA16-4A24-AAA1-D33E6599D1FF}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\GamesAssignmentTwo.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{F8081E6C-2E43-4392-B785-D7C9A4F31B4D}</UniqueIdentifier>
+      <UniqueIdentifier>{F30DFC02-BB17-4C41-85A3-FE45E602C8C1}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,8 +27,14 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\GamesAssignmentTwo">
-      <UniqueIdentifier>{08079AFE-B06F-401F-82AF-22E10553EC1E}</UniqueIdentifier>
+      <UniqueIdentifier>{E9381C3A-2347-4104-A414-18D8A4120CA2}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\GamesAssignmentTwo\BaseUserWidget.cpp">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GamesAssignmentTwo\BaseUserWidget.h">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\GamesAssignmentTwo\Checkpoint.cpp">
       <Filter>Source\GamesAssignmentTwo</Filter>
     </ClCompile>
