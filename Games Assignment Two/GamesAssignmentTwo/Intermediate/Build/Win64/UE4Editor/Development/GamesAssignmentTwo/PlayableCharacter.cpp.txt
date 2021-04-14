@@ -5,6 +5,8 @@ E:\UNREAL ENGINE\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/Root
 E:\UNREAL ENGINE\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
 E:\UNREAL ENGINE\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
 C:\Users\aveng\Documents\GitHub\GamesAssignment2-SecondYear\Games Assignment Two\GamesAssignmentTwo\Intermediate\Build\Win64\UE4Editor\Inc\GamesAssignmentTwo\PlayableCharacter.generated.h
+C:\Users\aveng\Documents\GitHub\GamesAssignment2-SecondYear\Games Assignment Two\GamesAssignmentTwo\Source\GamesAssignmentTwo\MainPlayerController.h
+C:\Users\aveng\Documents\GitHub\GamesAssignment2-SecondYear\Games Assignment Two\GamesAssignmentTwo\Intermediate\Build\Win64\UE4Editor\Inc\GamesAssignmentTwo\MainPlayerController.generated.h
 E:\UNREAL ENGINE\UE_4.25\Engine\Source\Runtime\Engine\Classes\Camera/CameraComponent.h
 E:\UNREAL ENGINE\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CameraComponent.generated.h
 E:\UNREAL ENGINE\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/SpringArmComponent.h

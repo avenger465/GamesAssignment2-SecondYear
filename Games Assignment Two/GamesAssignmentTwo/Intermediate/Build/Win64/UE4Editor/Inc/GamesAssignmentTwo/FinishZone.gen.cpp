@@ -247,9 +247,7 @@ void EmptyLinkFunctionForGeneratedCodeFinishZone() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFinishZone_Statics::NewProp_playersFinished_MetaData[] = {
 		{ "Category", "FinishZone" },
-		{ "Comment", "//UPROPERTY(EditAnywhere)\n//UNiagaraComponent* PlayerWonNiagaraTwo;\n" },
 		{ "ModuleRelativePath", "FinishZone.h" },
-		{ "ToolTip", "UPROPERTY(EditAnywhere)\nUNiagaraComponent* PlayerWonNiagaraTwo;" },
 	};
 #endif
 	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AFinishZone_Statics::NewProp_playersFinished = { "playersFinished", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFinishZone, playersFinished), METADATA_PARAMS(Z_Construct_UClass_AFinishZone_Statics::NewProp_playersFinished_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFinishZone_Statics::NewProp_playersFinished_MetaData)) };
@@ -293,7 +291,7 @@ void EmptyLinkFunctionForGeneratedCodeFinishZone() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFinishZone, 736218379);
+	IMPLEMENT_CLASS(AFinishZone, 936489967);
 	template<> GAMESASSIGNMENTTWO_API UClass* StaticClass<AFinishZone>()
 	{
 		return AFinishZone::StaticClass();

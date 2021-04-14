@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\GamesAssignmentTwo.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{F5930005-5F26-416A-82A9-51FC44D46F33}</UniqueIdentifier>
+      <UniqueIdentifier>{4378E32E-2228-46FE-B62C-47C3B2F36354}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\GamesAssignmentTwo.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{8DD054B5-A551-4C27-9342-3CA8F2A39923}</UniqueIdentifier>
+      <UniqueIdentifier>{B2A4DA09-F4AE-40D8-9736-295A72D2CBA8}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\GamesAssignmentTwo">
-      <UniqueIdentifier>{79031226-3398-4067-B5D9-45C280A60437}</UniqueIdentifier>
+      <UniqueIdentifier>{97625912-3561-42BE-B877-979BC4A1A1CB}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\GamesAssignmentTwo\BaseUserWidget.cpp">
       <Filter>Source\GamesAssignmentTwo</Filter>
@@ -126,6 +126,12 @@
       <Filter>Source\GamesAssignmentTwo</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\GamesAssignmentTwo\ServerLobbyGameModeBase.h">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GamesAssignmentTwo\SlidingDoor.cpp">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GamesAssignmentTwo\SlidingDoor.h">
       <Filter>Source\GamesAssignmentTwo</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\GamesAssignmentTwo\SpinningBar.cpp">

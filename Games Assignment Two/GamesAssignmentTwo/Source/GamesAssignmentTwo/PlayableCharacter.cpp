@@ -2,6 +2,7 @@
 
 
 #include "PlayableCharacter.h"
+#include "MainPlayerController.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Engine/TargetPoint.h"
@@ -73,6 +74,7 @@ void APlayableCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 	PlayerInputComponent->BindAction(TEXT("Dive"), IE_Pressed, this, &APlayableCharacter::Dive);
 	PlayerInputComponent->BindAction(TEXT("Push"), IE_Pressed, this, &APlayableCharacter::Push);
 }
+
 
 void APlayableCharacter::MoveForwards(float axis)
 {

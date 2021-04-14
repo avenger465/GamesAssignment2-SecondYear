@@ -3,6 +3,7 @@
 
 #include "FinishZone.h"
 #include "Components/BoxComponent.h"
+#include "CourseGameStateBase.h"
 #include "CourseGameModeBase.h"
 #include "CustomGameInstance.h"
 #include "PlayableCharacter.h"
@@ -26,6 +27,8 @@ void AFinishZone::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	//FMath::VInterpConstantTo();
+
 	ShapeComponent->OnComponentBeginOverlap.AddDynamic(this, &AFinishZone::OnOverlapBegin);
 	ShapeComponent->OnComponentEndOverlap.AddDynamic(this, &AFinishZone::OnOverlapEnd);
 }

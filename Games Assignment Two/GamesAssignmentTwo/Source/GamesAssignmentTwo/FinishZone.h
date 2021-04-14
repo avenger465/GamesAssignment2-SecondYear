@@ -3,7 +3,6 @@
 #pragma once
 
 #include "CoreMinimal.h"
-//#include "NiagaraComponent.h"
 #include "GameFramework/Actor.h"
 #include "FinishZone.generated.h"
 
@@ -28,12 +27,6 @@ public:
 private:
 	UPROPERTY(EditAnywhere)
 		UShapeComponent* ShapeComponent;
-
-	//UPROPERTY(EditAnywhere)
-		//UNiagaraComponent* PlayerWonNiagaraOne;
-
-	//UPROPERTY(EditAnywhere)
-		//UNiagaraComponent* PlayerWonNiagaraTwo;
 
 	UPROPERTY(EditAnywhere)
 		int playersFinished = 0;

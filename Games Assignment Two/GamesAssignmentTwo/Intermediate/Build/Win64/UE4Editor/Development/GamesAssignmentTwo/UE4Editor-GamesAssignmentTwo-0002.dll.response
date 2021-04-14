@@ -98,7 +98,7 @@
 "E:\UNREAL ENGINE\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Development\Core\UE4Editor-Core.lib"
 "E:\UNREAL ENGINE\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Development\CoreUObject\UE4Editor-CoreUObject.lib"
 "E:\UNREAL ENGINE\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Development\InputCore\UE4Editor-InputCore.lib"
-"E:\UNREAL ENGINE\UE_4.25\Engine\Plugins\Online\OnlineSubsystem\Intermediate\Build\Win64\UE4Editor\Development\OnlineSubsystem\UE4Editor-OnlineSubsystem.lib"
+"E:\UNREAL ENGINE\UE_4.25\Engine\Plugins\FX\Niagara\Intermediate\Build\Win64\UE4Editor\Development\Niagara\UE4Editor-Niagara.lib"
 /OUT:"C:\Users\aveng\Documents\GitHub\GamesAssignment2-SecondYear\Games Assignment Two\GamesAssignmentTwo\Binaries\Win64\UE4Editor-GamesAssignmentTwo-0002.dll"
 /IMPLIB:"C:\Users\aveng\Documents\GitHub\GamesAssignment2-SecondYear\Games Assignment Two\GamesAssignmentTwo\Intermediate\Build\Win64\UE4Editor\Development\GamesAssignmentTwo\UE4Editor-GamesAssignmentTwo-0002.suppressed.lib"
 /PDB:"C:\Users\aveng\Documents\GitHub\GamesAssignment2-SecondYear\Games Assignment Two\GamesAssignmentTwo\Binaries\Win64\UE4Editor-GamesAssignmentTwo-0002.pdb"

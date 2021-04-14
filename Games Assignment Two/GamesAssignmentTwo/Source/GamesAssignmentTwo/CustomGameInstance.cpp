@@ -46,10 +46,6 @@ void UCustomGameInstance::LoadMenuWidget()
 void UCustomGameInstance::SpawnPlayer()
 {
 	ServerSpawnPlayer();
-	//if (AMainPlayerController* PlayerControllerRef = Cast<AMainPlayerController>(GetFirstLocalPlayerController()))
-	//{
-	//	PlayerControllerRef->RPCGetPlayerInterfaceShown();
-	//}
 
 }
 
@@ -61,31 +57,22 @@ void UCustomGameInstance::ServerSpawnPlayer_Implementation()
 	{
 		if (PlayerController->GetPawn())
 		{
+			UE_LOG(LogTemp, Warning, TEXT("Destroy Character"));
 			PlayerController->GetPawn()->Destroy();
 		}
 		PlayerController->UnPossess(); // Unposses anything already in play
 		PlayerController->SetInputMode(FInputModeGameOnly());
 	}
+	FString CurrentMapName = GetWorld()->GetMapName();
+	if (!CurrentMapName.Contains("MainMenu"))
+	{
+		APlayableCharacter* Player = GetWorld()->SpawnActor<APlayableCharacter>(CharacterClass); // Spawns actor depending on class Selected
 
-	APlayableCharacter* Player = GetWorld()->SpawnActor<APlayableCharacter>(CharacterClass); // Spawns actor depending on class Selected
-
-	if (Player != nullptr)
-	{
-		PlayerController->Possess(Player); // Posses the character
-		PlayerController->SetInputMode(FInputModeGameOnly());
-	}
-	else
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 200, FColor::Green, TEXT("Player is not being spawned"));
-	}
-
-	if (!PlayerController->HasAuthority())
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 200, FColor::Green, TEXT("This is  client spawned"));
-	}
-	else
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 200, FColor::Green, TEXT("This is  server spawned"));
+		if (Player != nullptr)
+		{
+			PlayerController->Possess(Player); // Posses the character
+			PlayerController->SetInputMode(FInputModeGameOnly());
+		}
 	}
 }
 
