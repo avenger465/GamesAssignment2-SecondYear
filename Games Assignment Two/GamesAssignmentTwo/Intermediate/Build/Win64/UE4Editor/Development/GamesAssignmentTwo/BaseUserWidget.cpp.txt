@@ -1,5 +1,7 @@
 C:\Users\aveng\Documents\GitHub\GamesAssignment2-SecondYear\Games Assignment Two\GamesAssignmentTwo\Intermediate\Build\Win64\UE4Editor\Development\GamesAssignmentTwo\Definitions.GamesAssignmentTwo.h
 C:\Users\aveng\Documents\GitHub\GamesAssignment2-SecondYear\Games Assignment Two\GamesAssignmentTwo\Source\GamesAssignmentTwo\BaseUserWidget.h
+C:\Users\aveng\Documents\GitHub\GamesAssignment2-SecondYear\Games Assignment Two\GamesAssignmentTwo\Source\GamesAssignmentTwo\MenuInterface.h
+C:\Users\aveng\Documents\GitHub\GamesAssignment2-SecondYear\Games Assignment Two\GamesAssignmentTwo\Intermediate\Build\Win64\UE4Editor\Inc\GamesAssignmentTwo\MenuInterface.generated.h
 E:\UNREAL ENGINE\UE_4.25\Engine\Source\Runtime\UMG\Public\Blueprint/UserWidget.h
 E:\UNREAL ENGINE\UE_4.25\Engine\Source\Runtime\UMG\Public\Components/SlateWrapperTypes.h
 E:\UNREAL ENGINE\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\SlateWrapperTypes.generated.h

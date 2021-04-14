@@ -15,20 +15,26 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define GamesAssignmentTwo_Source_GamesAssignmentTwo_PlayableCharacter_h_15_SPARSE_DATA
 #define GamesAssignmentTwo_Source_GamesAssignmentTwo_PlayableCharacter_h_15_RPC_WRAPPERS \
-	virtual bool ServerDive_Validate(); \
-	virtual void ServerDive_Implementation(); \
+	virtual bool RPCServerPush_Validate(); \
+	virtual void RPCServerPush_Implementation(); \
+	virtual bool RPCServerDive_Validate(); \
+	virtual void RPCServerDive_Implementation(); \
 	virtual void RPCVictorySound_Implementation(); \
  \
-	DECLARE_FUNCTION(execServerDive); \
+	DECLARE_FUNCTION(execRPCServerPush); \
+	DECLARE_FUNCTION(execRPCServerDive); \
 	DECLARE_FUNCTION(execRPCVictorySound);
 
 
 #define GamesAssignmentTwo_Source_GamesAssignmentTwo_PlayableCharacter_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	virtual bool ServerDive_Validate(); \
-	virtual void ServerDive_Implementation(); \
+	virtual bool RPCServerPush_Validate(); \
+	virtual void RPCServerPush_Implementation(); \
+	virtual bool RPCServerDive_Validate(); \
+	virtual void RPCServerDive_Implementation(); \
 	virtual void RPCVictorySound_Implementation(); \
  \
-	DECLARE_FUNCTION(execServerDive); \
+	DECLARE_FUNCTION(execRPCServerPush); \
+	DECLARE_FUNCTION(execRPCServerDive); \
 	DECLARE_FUNCTION(execRPCVictorySound);
 
 
@@ -81,7 +87,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(APlayableCharacter); \
 	FORCEINLINE static uint32 __PPO__SpringArm() { return STRUCT_OFFSET(APlayableCharacter, SpringArm); } \
 	FORCEINLINE static uint32 __PPO__VictorySound() { return STRUCT_OFFSET(APlayableCharacter, VictorySound); } \
 	FORCEINLINE static uint32 __PPO__SpringArmLength() { return STRUCT_OFFSET(APlayableCharacter, SpringArmLength); } \
-	FORCEINLINE static uint32 __PPO__RespawnPoints() { return STRUCT_OFFSET(APlayableCharacter, RespawnPoints); }
+	FORCEINLINE static uint32 __PPO__RespawnPoints() { return STRUCT_OFFSET(APlayableCharacter, RespawnPoints); } \
+	FORCEINLINE static uint32 __PPO__OwnerController() { return STRUCT_OFFSET(APlayableCharacter, OwnerController); }
 
 
 #define GamesAssignmentTwo_Source_GamesAssignmentTwo_PlayableCharacter_h_12_PROLOG \

@@ -3,6 +3,7 @@
 
 #include "FinishZone.h"
 #include "Components/BoxComponent.h"
+#include "CourseGameModeBase.h"
 #include "CustomGameInstance.h"
 #include "PlayableCharacter.h"
 #include "Kismet/GameplayStatics.h"
@@ -50,6 +51,10 @@ void AFinishZone::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* Ot
 				{
 					UE_LOG(LogTemp, Warning, TEXT("Overlap Begin"));
 					UCustomGameInstance* GameInstanceRef = Cast<UCustomGameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
+					if (ACourseGameModeBase* GMode = GetWorld()->GetAuthGameMode<ACourseGameModeBase>())
+					{
+						GMode->PlayerOverFinishLine();
+					}
 					if (GameInstanceRef != nullptr)
 					{
 						GameInstanceRef->Warp("EndLevel");

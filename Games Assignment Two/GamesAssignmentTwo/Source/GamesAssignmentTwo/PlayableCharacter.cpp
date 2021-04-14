@@ -6,6 +6,7 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "Engine/TargetPoint.h"
 #include "Kismet/GameplayStatics.h"
+#include "CourseGameModeBase.h"
 
 // Sets default values
 APlayableCharacter::APlayableCharacter()
@@ -70,6 +71,7 @@ void APlayableCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 	PlayerInputComponent->BindAxis(TEXT("Turn"), this, &APlayableCharacter::Turn);
 	PlayerInputComponent->BindAction(TEXT("Jump"), IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction(TEXT("Dive"), IE_Pressed, this, &APlayableCharacter::Dive);
+	PlayerInputComponent->BindAction(TEXT("Push"), IE_Pressed, this, &APlayableCharacter::Push);
 }
 
 void APlayableCharacter::MoveForwards(float axis)
@@ -92,19 +94,70 @@ void APlayableCharacter::Turn(float axis)
 	AddControllerYawInput(axis); // Changes the yaw (left and right) based on the mouse input
 }
 
-void APlayableCharacter::ServerDive_Implementation()
+void APlayableCharacter::RPCServerDive_Implementation()
 {
 	LaunchCharacter(GetActorForwardVector() * 1000, false, false);
 }
 
-bool APlayableCharacter::ServerDive_Validate()
+bool APlayableCharacter::RPCServerDive_Validate()
+{
+	return true;
+}
+
+void APlayableCharacter::RPCServerPush_Implementation()
+{
+	UE_LOG(LogTemp, Warning, TEXT("Calling Push"));
+	FCollisionQueryParams Params;
+	Params.AddIgnoredActor(this);
+	Params.AddIgnoredActor(GetOwner());
+
+	OwnerController = this->GetController();
+	if (OwnerController == nullptr) return;
+
+	FVector Location; // Used to store location of ray spawnpoint
+	FRotator Rotation; // Used to store rotation of ray spawnpoint
+	//OwnerController->GetPlayerViewPoint(Location, Rotation); // Used to get the location and rotation of viewpoint to shoot from
+	//OwnerController->GetActorForwardVector()
+	OwnerController->GetActorEyesViewPoint(Location, Rotation);
+
+	UE_LOG(LogTemp, Warning, TEXT("Start Location: %s"), *Location.ToString());
+	FVector End = Location + Rotation.Vector() * 100;
+
+	UE_LOG(LogTemp, Warning, TEXT("End Location: %s"), *End.ToString());
+
+	FHitResult Hit;
+
+	bool success = GetWorld()->LineTraceSingleByChannel(Hit, Location, End, ECollisionChannel::ECC_Pawn, Params); // Checks if ray has hit something
+
+	if (success)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Hit Somethingy"));
+		FVector ShotDirection = -Rotation.Vector(); // Gets the shot direction
+		AActor* HitActor = Hit.GetActor(); // Gets the actor been hit
+		if (Cast<ACharacter>(HitActor))
+		{
+			ACharacter* character = Cast<ACharacter>(HitActor);
+			character->LaunchCharacter(this->GetActorForwardVector() * 500, false, false);
+			UE_LOG(LogTemp, Warning, TEXT("Hit Actor"));
+		}
+	}
+
+	//LaunchCharacter(GetActorForwardVector() * 1000, false, false);
+}
+
+bool APlayableCharacter::RPCServerPush_Validate()
 {
 	return true;
 }
 
 void APlayableCharacter::Dive()
 {
-	ServerDive();
+	RPCServerDive();
+}
+
+void APlayableCharacter::Push()
+{
+	RPCServerPush();
 }
 
 void APlayableCharacter::RPCVictorySound_Implementation()

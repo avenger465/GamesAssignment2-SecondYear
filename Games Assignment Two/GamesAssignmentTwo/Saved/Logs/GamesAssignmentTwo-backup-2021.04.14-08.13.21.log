@@ -1,0 +1,819 @@
+﻿Log file open, 04/14/21 09:11:23
+LogInit: Display: Running engine for game: GamesAssignmentTwo
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 71 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.216393
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +0:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin PlasticSourceControl
+LogPluginManager: Mounting plugin RiderSourceCodeAccess
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin EditorScriptingUtilities
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapLightEstimation
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin MagicLeapPassableWorld
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin MovieRenderPipeline
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin PostSplashScreen
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin ScreenshotTools
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.25-CL-14469661
+LogInit: Engine Version: 4.25.4-14469661+++UE4+Release-4.25
+LogInit: Compatible Engine Version: 4.25.0-13144385+++UE4+Release-4.25
+LogInit: Net CL: 13144385
+LogInit: OS: Windows 10 (Release 2009) (), CPU: AMD Ryzen 9 3900X 12-Core Processor            , GPU: NVIDIA GeForce GTX 1060 6GB
+LogInit: Compiled (64-bit): Oct 11 2020 08:10:49
+LogInit: Compiled with Visual C++: 19.24.28315.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.25
+LogInit: Command Line: -log -game
+LogInit: Base Directory: E:/UNREAL ENGINE/UE_4.25/Engine/Binaries/Win64/
+LogInit: Allocator: TBB
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 26
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 38
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 4
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 43
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 12
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 7
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 31
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 37
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/aveng/Documents/GitHub/GamesAssignment2-SecondYear/Games Assignment Two/GamesAssignmentTwo/Saved/Config/Windows/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2021.04.14-08.11.23:507][  0]LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+[2021.04.14-08.11.23:507][  0]LogConfig: Setting CVar [[r.setres:1280x720]]
+[2021.04.14-08.11.23:507][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/aveng/Documents/GitHub/GamesAssignment2-SecondYear/Games Assignment Two/GamesAssignmentTwo/Saved/Config/Windows/Engine.ini]
+[2021.04.14-08.11.23:508][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2021.04.14-08.11.23:508][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/aveng/Documents/GitHub/GamesAssignment2-SecondYear/Games Assignment Two/GamesAssignmentTwo/Saved/Config/Windows/Engine.ini]
+[2021.04.14-08.11.23:509][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/aveng/Documents/GitHub/GamesAssignment2-SecondYear/Games Assignment Two/GamesAssignmentTwo/Saved/Config/Windows/Engine.ini]
+[2021.04.14-08.11.23:509][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2021.04.14-08.11.23:510][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2021.04.14-08.11.23:512][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2021.04.14-08.11.23:512][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2021.04.14-08.11.23:513][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2021.04.14-08.11.23:514][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2021.04.14-08.11.23:514][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2021.04.14-08.11.23:515][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2021.04.14-08.11.23:516][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2021.04.14-08.11.23:517][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2021.04.14-08.11.23:518][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2021.04.14-08.11.23:519][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2021.04.14-08.11.23:520][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2021.04.14-08.11.23:522][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2021.04.14-08.11.23:522][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/aveng/Documents/GitHub/GamesAssignment2-SecondYear/Games Assignment Two/GamesAssignmentTwo/Saved/Config/Windows/Engine.ini]
+[2021.04.14-08.11.23:523][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2021.04.14-08.11.23:524][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2021.04.14-08.11.23:524][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2021.04.14-08.11.23:525][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2021.04.14-08.11.23:525][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2021.04.14-08.11.23:525][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2021.04.14-08.11.23:526][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2021.04.14-08.11.23:527][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2021.04.14-08.11.23:527][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2021.04.14-08.11.23:529][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2021.04.14-08.11.23:530][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2021.04.14-08.11.23:531][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2021.04.14-08.11.23:532][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2021.04.14-08.11.23:533][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/aveng/Documents/GitHub/GamesAssignment2-SecondYear/Games Assignment Two/GamesAssignmentTwo/Saved/Config/Windows/Engine.ini]
+[2021.04.14-08.11.23:534][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/aveng/Documents/GitHub/GamesAssignment2-SecondYear/Games Assignment Two/GamesAssignmentTwo/Saved/Config/Windows/Engine.ini]
+[2021.04.14-08.11.23:538][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/aveng/Documents/GitHub/GamesAssignment2-SecondYear/Games Assignment Two/GamesAssignmentTwo/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-08.11.23:538][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.04.14-08.11.23:539][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.04.14-08.11.23:540][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/aveng/Documents/GitHub/GamesAssignment2-SecondYear/Games Assignment Two/GamesAssignmentTwo/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-08.11.23:542][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.04.14-08.11.23:545][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/aveng/Documents/GitHub/GamesAssignment2-SecondYear/Games Assignment Two/GamesAssignmentTwo/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-08.11.23:546][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.04.14-08.11.23:547][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.04.14-08.11.23:549][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.04.14-08.11.23:550][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.04.14-08.11.23:551][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.04.14-08.11.23:552][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.04.14-08.11.23:554][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.04.14-08.11.23:555][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.04.14-08.11.23:556][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.04.14-08.11.23:557][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.04.14-08.11.23:558][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.04.14-08.11.23:559][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.04.14-08.11.23:559][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.04.14-08.11.23:559][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.04.14-08.11.23:561][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.04.14-08.11.23:562][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.04.14-08.11.23:562][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.04.14-08.11.23:563][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.04.14-08.11.23:564][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/aveng/Documents/GitHub/GamesAssignment2-SecondYear/Games Assignment Two/GamesAssignmentTwo/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-08.11.23:565][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.04.14-08.11.23:566][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.04.14-08.11.23:566][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.04.14-08.11.23:567][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.04.14-08.11.23:567][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.04.14-08.11.23:568][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.04.14-08.11.23:569][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.04.14-08.11.23:570][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.04.14-08.11.23:571][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.04.14-08.11.23:572][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.04.14-08.11.23:573][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.04.14-08.11.23:574][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.04.14-08.11.23:575][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.04.14-08.11.23:576][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.04.14-08.11.23:576][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.04.14-08.11.23:577][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.04.14-08.11.23:577][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.04.14-08.11.23:578][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.04.14-08.11.23:579][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.04.14-08.11.23:580][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.04.14-08.11.23:581][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.04.14-08.11.23:582][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.04.14-08.11.23:583][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.04.14-08.11.23:584][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.04.14-08.11.23:585][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.04.14-08.11.23:585][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.04.14-08.11.23:586][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.04.14-08.11.23:587][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.04.14-08.11.23:587][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.04.14-08.11.23:588][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.04.14-08.11.23:590][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/aveng/Documents/GitHub/GamesAssignment2-SecondYear/Games Assignment Two/GamesAssignmentTwo/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-08.11.23:591][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.04.14-08.11.23:591][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.04.14-08.11.23:592][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.04.14-08.11.23:593][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.04.14-08.11.23:594][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.04.14-08.11.23:595][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.04.14-08.11.23:596][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.04.14-08.11.23:596][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.04.14-08.11.23:597][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.04.14-08.11.23:597][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/aveng/Documents/GitHub/GamesAssignment2-SecondYear/Games Assignment Two/GamesAssignmentTwo/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-08.11.23:598][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.04.14-08.11.23:599][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.04.14-08.11.23:600][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.04.14-08.11.23:601][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.04.14-08.11.23:602][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.04.14-08.11.23:604][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.04.14-08.11.23:606][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.04.14-08.11.23:606][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.04.14-08.11.23:607][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.04.14-08.11.23:610][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.04.14-08.11.23:612][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.04.14-08.11.23:613][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.04.14-08.11.23:614][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.04.14-08.11.23:615][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.04.14-08.11.23:615][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.04.14-08.11.23:616][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.04.14-08.11.23:618][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.04.14-08.11.23:619][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.04.14-08.11.23:620][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.04.14-08.11.23:621][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.04.14-08.11.23:622][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.04.14-08.11.23:623][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.04.14-08.11.23:624][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.04.14-08.11.23:626][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.04.14-08.11.23:626][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.04.14-08.11.23:628][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.04.14-08.11.23:629][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/aveng/Documents/GitHub/GamesAssignment2-SecondYear/Games Assignment Two/GamesAssignmentTwo/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-08.11.23:631][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.04.14-08.11.23:632][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.04.14-08.11.23:632][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/aveng/Documents/GitHub/GamesAssignment2-SecondYear/Games Assignment Two/GamesAssignmentTwo/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-08.11.23:633][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.04.14-08.11.23:634][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.04.14-08.11.23:635][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.04.14-08.11.23:635][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.04.14-08.11.23:636][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.04.14-08.11.23:638][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.04.14-08.11.23:639][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.04.14-08.11.23:641][  0]LogInit: Selected Device Profile: [Windows]
+[2021.04.14-08.11.23:642][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2021.04.14-08.11.23:643][  0]LogHAL: Display: Platform has ~ 32 GB [34260910080 / 34359738368 / 32], which maps to Largest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2021.04.14-08.11.23:645][  0]LogInit: Going up to parent DeviceProfile []
+[2021.04.14-08.11.23:646][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/aveng/Documents/GitHub/GamesAssignment2-SecondYear/Games Assignment Two/GamesAssignmentTwo/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-08.11.23:647][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.04.14-08.11.23:648][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.04.14-08.11.23:650][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/aveng/Documents/GitHub/GamesAssignment2-SecondYear/Games Assignment Two/GamesAssignmentTwo/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-08.11.23:652][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.04.14-08.11.23:653][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/aveng/Documents/GitHub/GamesAssignment2-SecondYear/Games Assignment Two/GamesAssignmentTwo/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-08.11.23:654][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.04.14-08.11.23:655][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.04.14-08.11.23:656][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.04.14-08.11.23:657][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.04.14-08.11.23:657][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.04.14-08.11.23:659][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.04.14-08.11.23:661][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.04.14-08.11.23:662][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.04.14-08.11.23:663][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.04.14-08.11.23:664][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.04.14-08.11.23:666][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.04.14-08.11.23:667][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.04.14-08.11.23:667][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.04.14-08.11.23:669][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.04.14-08.11.23:671][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.04.14-08.11.23:672][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.04.14-08.11.23:673][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.04.14-08.11.23:674][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.04.14-08.11.23:675][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/aveng/Documents/GitHub/GamesAssignment2-SecondYear/Games Assignment Two/GamesAssignmentTwo/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-08.11.23:676][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.04.14-08.11.23:677][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.04.14-08.11.23:678][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.04.14-08.11.23:678][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.04.14-08.11.23:679][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.04.14-08.11.23:680][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.04.14-08.11.23:681][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.04.14-08.11.23:683][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.04.14-08.11.23:684][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.04.14-08.11.23:685][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.04.14-08.11.23:687][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.04.14-08.11.23:688][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.04.14-08.11.23:688][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.04.14-08.11.23:689][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.04.14-08.11.23:691][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.04.14-08.11.23:692][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.04.14-08.11.23:693][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.04.14-08.11.23:694][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.04.14-08.11.23:695][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.04.14-08.11.23:698][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.04.14-08.11.23:698][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.04.14-08.11.23:700][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.04.14-08.11.23:701][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.04.14-08.11.23:702][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.04.14-08.11.23:702][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.04.14-08.11.23:703][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.04.14-08.11.23:705][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.04.14-08.11.23:706][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.04.14-08.11.23:707][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.04.14-08.11.23:708][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.04.14-08.11.23:708][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/aveng/Documents/GitHub/GamesAssignment2-SecondYear/Games Assignment Two/GamesAssignmentTwo/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-08.11.23:710][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.04.14-08.11.23:712][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.04.14-08.11.23:713][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.04.14-08.11.23:714][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.04.14-08.11.23:715][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.04.14-08.11.23:717][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.04.14-08.11.23:717][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.04.14-08.11.23:718][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.04.14-08.11.23:720][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.04.14-08.11.23:722][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/aveng/Documents/GitHub/GamesAssignment2-SecondYear/Games Assignment Two/GamesAssignmentTwo/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-08.11.23:723][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.04.14-08.11.23:724][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.04.14-08.11.23:725][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.04.14-08.11.23:726][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.04.14-08.11.23:728][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.04.14-08.11.23:729][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.04.14-08.11.23:730][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.04.14-08.11.23:731][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.04.14-08.11.23:732][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.04.14-08.11.23:733][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.04.14-08.11.23:734][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.04.14-08.11.23:735][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.04.14-08.11.23:736][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.04.14-08.11.23:737][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.04.14-08.11.23:739][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.04.14-08.11.23:739][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.04.14-08.11.23:740][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.04.14-08.11.23:742][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.04.14-08.11.23:742][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.04.14-08.11.23:743][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.04.14-08.11.23:744][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.04.14-08.11.23:745][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.04.14-08.11.23:746][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.04.14-08.11.23:747][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.04.14-08.11.23:748][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.04.14-08.11.23:749][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.04.14-08.11.23:750][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/aveng/Documents/GitHub/GamesAssignment2-SecondYear/Games Assignment Two/GamesAssignmentTwo/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-08.11.23:751][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.04.14-08.11.23:752][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.04.14-08.11.23:753][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/aveng/Documents/GitHub/GamesAssignment2-SecondYear/Games Assignment Two/GamesAssignmentTwo/Saved/Config/Windows/Scalability.ini]
+[2021.04.14-08.11.23:754][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.04.14-08.11.23:755][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.04.14-08.11.23:756][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.04.14-08.11.23:757][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.04.14-08.11.23:758][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.04.14-08.11.23:759][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.04.14-08.11.23:760][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.04.14-08.11.23:763][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2021.04.14-08.11.23:765][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2021.04.14-08.11.23:766][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2021.04.14-08.11.23:767][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2021.04.14-08.11.23:768][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/aveng/Documents/GitHub/GamesAssignment2-SecondYear/Games Assignment Two/GamesAssignmentTwo/Saved/Config/Windows/Engine.ini]
+[2021.04.14-08.11.23:769][  0]LogInit: Computer: PROGRAMMING-PC
+[2021.04.14-08.11.23:770][  0]LogInit: User: aveng
+[2021.04.14-08.11.23:771][  0]LogInit: CPU Page size=4096, Cores=12
+[2021.04.14-08.11.23:772][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2021.04.14-08.11.23:774][  0]LogMemory: Memory total: Physical=31.9GB (32GB approx)
+[2021.04.14-08.11.23:775][  0]LogMemory: Platform Memory Stats for Windows
+[2021.04.14-08.11.23:776][  0]LogMemory: Process Physical Memory: 121.34 MB used, 121.35 MB peak
+[2021.04.14-08.11.23:777][  0]LogMemory: Process Virtual Memory: 111.00 MB used, 111.00 MB peak
+[2021.04.14-08.11.23:778][  0]LogMemory: Physical Memory: 25628.15 MB used,  7045.60 MB free, 32673.75 MB total
+[2021.04.14-08.11.23:779][  0]LogMemory: Virtual Memory: 5220.85 MB used,  134212504.00 MB free, 134217728.00 MB total
+[2021.04.14-08.11.23:785][  0]LogWindows: WindowsPlatformFeatures enabled
+[2021.04.14-08.11.23:844][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2021.04.14-08.11.23:844][  0]LogInit: Using OS detected language (en-GB).
+[2021.04.14-08.11.23:846][  0]LogInit: Using OS detected locale (en-GB).
+[2021.04.14-08.11.23:848][  0]LogTextLocalizationManager: No specific localization for 'en-GB' exists, so the 'en' localization will be used.
+[2021.04.14-08.11.24:034][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2021.04.14-08.11.24:035][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2021.04.14-08.11.24:051][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.04.14-08.11.24:051][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2021.04.14-08.11.24:057][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2021.04.14-08.11.24:058][  0]LogD3D11RHI: D3D11 adapters:
+[2021.04.14-08.11.24:195][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1060 6GB' (Feature Level 11_0)
+[2021.04.14-08.11.24:195][  0]LogD3D11RHI:       6052/0/16336 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2021.04.14-08.11.24:200][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2021.04.14-08.11.24:200][  0]LogD3D11RHI:       0/0/16336 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2021.04.14-08.11.24:200][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2021.04.14-08.11.24:217][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2021.04.14-08.11.24:217][  0]LogD3D11RHI:     GPU DeviceId: 0x1c03 (for the marketing name, search the web for "GPU Device Id")
+[2021.04.14-08.11.24:218][  0]LogWindows: EnumDisplayDevices:
+[2021.04.14-08.11.24:220][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1060 6GB' (P:1 D:1)
+[2021.04.14-08.11.24:221][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:1)
+[2021.04.14-08.11.24:222][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2021.04.14-08.11.24:223][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1060 6GB' (P:0 D:0)
+[2021.04.14-08.11.24:224][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2021.04.14-08.11.24:225][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1060 6GB
+[2021.04.14-08.11.24:226][  0]LogD3D11RHI:   Driver Version: 461.92 (internal:27.21.14.6192, unified:461.92)
+[2021.04.14-08.11.24:227][  0]LogD3D11RHI:      Driver Date: 3-11-2021
+[2021.04.14-08.11.24:229][  0]LogRHI: Texture pool is 4236 MB (70% of 6052 MB)
+[2021.04.14-08.11.24:318][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2021.04.14-08.11.24:318][  0]LogD3D11RHI: Async texture creation enabled
+[2021.04.14-08.11.24:319][  0]LogD3D11RHI: Array index from any shader is supported
+[2021.04.14-08.11.24:348][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2021.04.14-08.11.24:730][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2021.04.14-08.11.24:735][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2021.04.14-08.11.24:745][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2021.04.14-08.11.24:754][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2021.04.14-08.11.24:754][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2021.04.14-08.11.24:761][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2021.04.14-08.11.24:815][  0]LogShaderCompilers: Guid format shader working directory is -53 characters bigger than the processId version (C:/Users/aveng/Documents/GitHub/GamesAssignment2-SecondYear/Games Assignment Two/GamesAssignmentTwo/Intermediate/Shaders/WorkingDirectory/8456/).
+[2021.04.14-08.11.24:816][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/aveng/AppData/Local/Temp/UnrealShaderWorkingDir/72FD88D3404F8E65489D0D85BD3A457C/'.
+[2021.04.14-08.11.24:817][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2021.04.14-08.11.24:817][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2021.04.14-08.11.24:817][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2021.04.14-08.11.25:482][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2021.04.14-08.11.25:524][  0]LogDerivedDataCache: Loaded boot cache 0.04s 78MB C:/Users/aveng/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.04.14-08.11.25:524][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/aveng/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc
+[2021.04.14-08.11.25:526][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file C:/Users/aveng/Documents/GitHub/GamesAssignment2-SecondYear/Games Assignment Two/GamesAssignmentTwo/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2021.04.14-08.11.25:526][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2021.04.14-08.11.25:527][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file C:/Users/aveng/Documents/GitHub/GamesAssignment2-SecondYear/Games Assignment Two/GamesAssignmentTwo/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.04.14-08.11.25:527][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2021.04.14-08.11.25:538][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2021.04.14-08.11.25:539][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.04.14-08.11.25:539][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2021.04.14-08.11.25:541][  0]LogDerivedDataCache: Using Local data cache path C:/Users/aveng/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2021.04.14-08.11.25:541][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2021.04.14-08.11.25:542][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2021.04.14-08.11.25:578][  0]LogSlate: Using FreeType 2.10.0
+[2021.04.14-08.11.25:579][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2021.04.14-08.11.25:649][  0]LogInit: Using OS detected language (en-GB).
+[2021.04.14-08.11.25:649][  0]LogInit: Using OS detected locale (en-GB).
+[2021.04.14-08.11.25:650][  0]LogTextLocalizationManager: No localization for 'en-GB' exists, so 'en' will be used for the language.
+[2021.04.14-08.11.25:651][  0]LogTextLocalizationManager: No localization for 'en-GB' exists, so 'en' will be used for the locale.
+[2021.04.14-08.11.25:651][  0]LogSlate: FontCache flush requested. Reason: Culture for localization was changed
+[2021.04.14-08.11.25:651][  0]LogSlate: FontCache flush requested. Reason: Culture for localization was changed
+[2021.04.14-08.11.25:653][  0]LogTextLocalizationManager: Compacting localization data took   0.00ms
+[2021.04.14-08.11.25:656][  0]LogAssetRegistry: FAssetRegistry took 0.0018 seconds to start up
+[2021.04.14-08.11.25:862][  0]LogPackageLocalizationCache: Processed 19 localized package path(s) for 1 prioritized culture(s) in 0.049432 seconds
+[2021.04.14-08.11.25:906][  0]LogInit: Selected Device Profile: [Windows]
+[2021.04.14-08.11.26:002][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2021.04.14-08.11.26:003][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2021.04.14-08.11.26:004][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2021.04.14-08.11.26:004][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2021.04.14-08.11.26:004][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2021.04.14-08.11.26:020][  0]LogNetVersion: GamesAssignmentTwo 1.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 1185472599)
+[2021.04.14-08.11.26:228][  0]LogAISub: UAISubsystem::UAISubsystem AISubsystem (0000022EA9EB58C0), frame # 0
+[2021.04.14-08.11.26:228][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000022EA9DED6C0), frame # 0
+[2021.04.14-08.11.26:231][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000022EA9DE7C00), frame # 0
+[2021.04.14-08.11.26:305][  0]LogCollectionManager: Loaded 0 collections in 0.000875 seconds
+[2021.04.14-08.11.26:307][  0]LogFileCache: Scanning file cache for directory 'C:/Users/aveng/Documents/GitHub/GamesAssignment2-SecondYear/Games Assignment Two/GamesAssignmentTwo/Saved/Collections/' took 0.00s
+[2021.04.14-08.11.26:308][  0]LogFileCache: Scanning file cache for directory 'C:/Users/aveng/Documents/GitHub/GamesAssignment2-SecondYear/Games Assignment Two/GamesAssignmentTwo/Content/Developers/aveng/Collections/' took 0.00s
+[2021.04.14-08.11.26:308][  0]LogFileCache: Scanning file cache for directory 'C:/Users/aveng/Documents/GitHub/GamesAssignment2-SecondYear/Games Assignment Two/GamesAssignmentTwo/Content/Collections/' took 0.00s
+[2021.04.14-08.11.26:309][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000002 seconds (updated 0 objects)
+[2021.04.14-08.11.26:361][  0]LogMoviePlayer: Initializing movie player
+[2021.04.14-08.11.26:546][  0]LogScript: Warning: Script Msg: A null object was passed as a world context object to UEngine::GetWorldFromContextObject().
+[2021.04.14-08.11.26:548][  0]LogScript: Warning: Script Msg: A null object was passed as a world context object to UEngine::GetWorldFromContextObject().
+[2021.04.14-08.11.26:550][  0]LogScript: Warning: Script Msg: A null object was passed as a world context object to UEngine::GetWorldFromContextObject().
+[2021.04.14-08.11.26:552][  0]LogScript: Warning: Script Msg: A null object was passed as a world context object to UEngine::GetWorldFromContextObject().
+[2021.04.14-08.11.26:608][  0]LogBlueprint: Warning: [Compiler Ue4ASP_Character] InputAction Event references unknown Action 'Crouch' for  InputAction Crouch
+[2021.04.14-08.11.26:610][  0]LogBlueprint: Warning: [Compiler Ue4ASP_Character] Input Axis Event references unknown Axis 'MoveForward' for  InputAxis MoveForward
+[2021.04.14-08.11.26:611][  0]LogBlueprint: Warning: [Compiler Ue4ASP_Character] Input Axis Event references unknown Axis 'MoveRight' for  InputAxis MoveRight
+[2021.04.14-08.11.26:706][  0]SourceControl: Source control is disabled
+[2021.04.14-08.11.26:707][  0]SourceControl: Source control is disabled
+[2021.04.14-08.11.26:715][  0]SourceControl: Source control is disabled
+[2021.04.14-08.11.26:836][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2021.04.14-08.11.26:853][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.04.14-08.11.26:853][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.04.14-08.11.26:892][  0]LogOcInput: OculusInput pre-init called
+[2021.04.14-08.11.26:906][  0]LogUObjectArray: 21163 objects as part of root set at end of initial load.
+[2021.04.14-08.11.26:906][  0]LogUObjectAllocator: 5880432 out of 0 bytes used by permanent object pool.
+[2021.04.14-08.11.26:907][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2021.04.14-08.11.26:954][  0]LogEngine: Initializing Engine...
+[2021.04.14-08.11.26:955][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.04.14-08.11.26:955][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
+[2021.04.14-08.11.26:957][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2021.04.14-08.11.27:030][  0]LogInit: Initializing FReadOnlyCVARCache
+[2021.04.14-08.11.27:032][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.04.14-08.11.27:032][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.04.14-08.11.27:033][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.04.14-08.11.27:034][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.04.14-08.11.27:034][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.04.14-08.11.27:035][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.04.14-08.11.27:035][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.04.14-08.11.27:036][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.04.14-08.11.27:037][  0]LogAudio: Display: Using built-in audio occlusion.
+[2021.04.14-08.11.27:037][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2021.04.14-08.11.27:057][  0]LogAudioMixer: Display: 0: FrontLeft
+[2021.04.14-08.11.27:057][  0]LogAudioMixer: Display: 1: FrontRight
+[2021.04.14-08.11.27:059][  0]LogAudioMixer: Display: 2: FrontCenter
+[2021.04.14-08.11.27:059][  0]LogAudioMixer: Display: 3: LowFrequency
+[2021.04.14-08.11.27:060][  0]LogAudioMixer: Display: 4: BackLeft
+[2021.04.14-08.11.27:061][  0]LogAudioMixer: Display: 5: BackRight
+[2021.04.14-08.11.27:061][  0]LogAudioMixer: Display: 6: SideLeft
+[2021.04.14-08.11.27:061][  0]LogAudioMixer: Display: 7: SideRight
+[2021.04.14-08.11.27:096][  0]LogAudioMixer: Display: Using Audio Device Speakers (THX Spatial Audio)
+[2021.04.14-08.11.27:102][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.04.14-08.11.27:103][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.04.14-08.11.27:103][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.04.14-08.11.27:105][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.04.14-08.11.27:108][  0]LogInit: FAudioDevice initialized.
+[2021.04.14-08.11.27:109][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2021.04.14-08.11.27:198][  0]LogDerivedDataCache: Saved boot cache 0.09s 77MB C:/Users/aveng/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.04.14-08.11.27:200][  0]LogInit: Texture streaming: Enabled
+[2021.04.14-08.11.27:241][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.14-08.11.27:242][  0]LogInit: Display: Game Engine Initialized.
+[2021.04.14-08.11.27:243][  0]LogNiagaraEditor: Warning: GEditor isn't valid! Particle reset commands will not work for Niagara components!
+[2021.04.14-08.11.27:254][  0]LogInit: Display: Starting Game.
+[2021.04.14-08.11.27:254][  0]LogNet: Browse: /Game/Levels/MainMenu?Name=Player
+[2021.04.14-08.11.27:254][  0]LogLoad: LoadMap: /Game/Levels/MainMenu?Name=Player
+[2021.04.14-08.11.27:254][  0]LogWorld: BeginTearingDown for /Temp/Untitled_0
+[2021.04.14-08.11.27:256][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2021.04.14-08.11.27:256][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-08.11.27:275][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.68ms
+[2021.04.14-08.11.27:327][  0]LogAIModule: Creating AISystem for world MainMenu
+[2021.04.14-08.11.27:327][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000022EF8955A00), frame # 0
+[2021.04.14-08.11.27:328][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000022EB1AF3C40), frame # 0
+[2021.04.14-08.11.27:336][  0]LogLoad: Game class is 'BP_GamesAssignmentTwoGameModeBse_C'
+[2021.04.14-08.11.27:338][  0]LogWorld: Bringing World /Game/Levels/MainMenu.MainMenu up for play (max tick rate 0) at 2021.04.14-09.11.27
+[2021.04.14-08.11.27:339][  0]LogWorld: Bringing up level for play took: 0.001999
+[2021.04.14-08.11.27:344][  0]LogTemp: Warning: 0
+[2021.04.14-08.11.27:345][  0]LogTemp: Warning: Load main menu widget from instance called
+[2021.04.14-08.11.27:345][  0]LogTemp: Warning: Load main menu widget from instance MenuClass set
+[2021.04.14-08.11.27:347][  0]LogTemp: Warning: TRUEEE
+[2021.04.14-08.11.27:348][  0]LogTemp: Warning: Level: MainMenu
+[2021.04.14-08.11.27:348][  0]LogLoad: Took 0.094365 seconds to LoadMap(/Game/Levels/MainMenu)
+[2021.04.14-08.11.27:369][  0]LogSlate: Took 0.000176 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2021.04.14-08.11.27:380][  0]LogRenderer: Reallocating scene render targets to support 960x1020 Format 10 NumSamples 1 (Frame:1).
+[2021.04.14-08.11.27:380][  0]LogLoad: (Engine Initialization) Total time: 5.64 seconds
+[2021.04.14-08.11.27:381][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2021.04.14-08.11.27:403][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2021.04.14-08.11.27:406][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-08.11.27:483][  1]LogSlate: Took 0.000173 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2021.04.14-08.11.38:912][136]LogSlate: WidgetSwitcher ('None') active index changed to 1
+[2021.04.14-08.11.39:718][414]LogGameMode: ProcessServerTravel: /Game/Levels/Lobby?listen
+[2021.04.14-08.11.39:720][414]LogEngine: Server switch level: /Game/Levels/Lobby?Name=Player?listen
+[2021.04.14-08.11.39:720][414]LogNet: Browse: /Game/Levels/Lobby?Name=Player?listen
+[2021.04.14-08.11.39:720][414]LogLoad: LoadMap: /Game/Levels/Lobby?Name=Player?listen
+[2021.04.14-08.11.39:721][414]LogWorld: BeginTearingDown for /Game/Levels/MainMenu
+[2021.04.14-08.11.39:722][414]LogWorld: UWorld::CleanupWorld for MainMenu, bSessionEnded=true, bCleanupResources=true
+[2021.04.14-08.11.39:722][414]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-08.11.39:766][414]LogAudio: Display: Waited 42.706402 ms for audio thread.
+[2021.04.14-08.11.39:783][414]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000022EF8955A00), frame # 2414
+[2021.04.14-08.11.39:783][414]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000022EB1AF3C40), frame # 2414
+[2021.04.14-08.11.39:784][414]LogUObjectHash: Compacting FUObjectHashTables data took   0.86ms
+[2021.04.14-08.11.39:837][414]LogAIModule: Creating AISystem for world Lobby
+[2021.04.14-08.11.39:837][414]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000022EF8954800), frame # 2414
+[2021.04.14-08.11.39:838][414]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000022EFB405800), frame # 2414
+[2021.04.14-08.11.39:839][414]LogLoad: Game class is 'BP_ServerLobbyGameModeBase_C'
+[2021.04.14-08.11.39:840][414]LogNet: ReplicationDriverClass is null! Not using ReplicationDriver.
+[2021.04.14-08.11.39:840][414]LogNetCore: DDoS detection status: detection enabled: 0 analytics enabled: 0
+[2021.04.14-08.11.39:840][414]LogInit: WinSock: Socket queue. Rx: 131072 (config 131072) Tx: 131072 (config 131072)
+[2021.04.14-08.11.39:841][414]LogNet: Created socket for bind address: 0.0.0.0 on port 7777
+[2021.04.14-08.11.39:841][414]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2021.04.14-08.11.39:841][414]LogNet: GameNetDriver IpNetDriver_0 IpNetDriver listening on port 7777
+[2021.04.14-08.11.39:843][414]LogWorld: Bringing World /Game/Levels/Lobby.Lobby up for play (max tick rate 0) at 2021.04.14-09.11.39
+[2021.04.14-08.11.39:843][414]LogWorld: Bringing up level for play took: 0.001038
+[2021.04.14-08.11.39:844][414]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2021.04.14-08.11.39:846][414]LogTemp: Warning: Players: 1
+[2021.04.14-08.11.39:847][414]LogTemp: Warning: 0
+[2021.04.14-08.11.39:849][414]LogTemp: Warning: Level: Lobby
+[2021.04.14-08.11.39:849][414]LogLoad: Took 0.128051 seconds to LoadMap(/Game/Levels/Lobby)
+[2021.04.14-08.11.44:826][ 93]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:52268
+[2021.04.14-08.11.44:826][ 93]LogHandshake: SendConnectChallenge. Timestamp: 5.109593, Cookie: 047093203045053027077139187066125159056221083223022074106101
+[2021.04.14-08.11.44:850][ 94]LogNet: NotifyAcceptingConnection accepted from: 127.0.0.1:52268
+[2021.04.14-08.11.44:850][ 94]LogHandshake: SendChallengeAck. InCookie: 047093203045053027077139187066125159056221083223022074106101
+[2021.04.14-08.11.44:851][ 94]LogNet: Server accepting post-challenge connection from: 127.0.0.1:52268
+[2021.04.14-08.11.44:852][ 94]PacketHandlerLog: Loaded PacketHandler component: Engine.EngineHandlerComponentFactory (StatelessConnectHandlerComponent)
+[2021.04.14-08.11.44:852][ 94]LogNet: NotifyAcceptedConnection: Name: Lobby, TimeStamp: 04/14/21 09:11:44, [UNetConnection] RemoteAddr: 127.0.0.1:52268, Name: IpConnection_0, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2021.04.14-08.11.44:852][ 94]LogNet: AddClientConnection: Added client connection: [UNetConnection] RemoteAddr: 127.0.0.1:52268, Name: IpConnection_0, Driver: GameNetDriver IpNetDriver_0, IsServer: YES, PC: NULL, Owner: NULL, UniqueId: INVALID
+[2021.04.14-08.11.44:884][ 95]LogNet: NotifyAcceptingChannel Control 0 server World /Game/Levels/Lobby.Lobby: Accepted
+[2021.04.14-08.11.44:884][ 95]LogNet: Remote platform little endian=1
+[2021.04.14-08.11.44:886][ 95]LogNet: This platform little endian=1
+[2021.04.14-08.11.44:886][ 95]LogNetVersion: GamesAssignmentTwo 1.0.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 1872474305)
+[2021.04.14-08.11.44:908][ 96]LogNet: Login request: ?Name=Programming-PC-18BB81424B72D6D349517AB710BF98B5 userId: NULL:Programming-PC-18BB81424B72D6D349517AB710BF98B5 platform: NULL
+[2021.04.14-08.11.44:922][ 97]LogNet: Client netspeed is 10000
+[2021.04.14-08.11.45:021][136]LogNet: Join request: /Game/Levels/MainMenu?Name=Programming-PC-18BB81424B72D6D349517AB710BF98B5?SplitscreenCount=1
+[2021.04.14-08.11.45:021][136]PIE: Error: Only Local Player Controllers can be assigned to widgets. BP_MainPlayerController_C_1 is not a Local Player Controller.
+[2021.04.14-08.11.45:022][136]LogTemp: Warning: Level: Lobby
+[2021.04.14-08.11.45:023][136]LogOnlineSession: Warning: OSS: No game present to join for session (GameSession)
+[2021.04.14-08.11.45:025][136]LogTemp: Warning: 0
+[2021.04.14-08.11.45:026][136]LogTemp: Warning: Players: 2
+[2021.04.14-08.11.45:027][136]LogNet: Join succeeded: Programming-PC-18BB8
+[2021.04.14-08.11.55:023][608]LogGameMode: ProcessServerTravel: /Game/Levels/Gamelevel?listen
+[2021.04.14-08.11.55:025][608]LogWorld: SeamlessTravel to: /Game/Levels/Gamelevel
+[2021.04.14-08.11.55:040][609]LogWorld: BeginTearingDown for /Game/Levels/Lobby
+[2021.04.14-08.11.55:042][609]LogWorld: UWorld::CleanupWorld for Lobby, bSessionEnded=false, bCleanupResources=true
+[2021.04.14-08.11.55:042][609]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-08.11.55:058][609]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000022EFB405800), frame # 3609
+[2021.04.14-08.11.55:059][609]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000022EF8954800), frame # 3609
+[2021.04.14-08.11.55:061][609]LogUObjectHash: Compacting FUObjectHashTables data took   1.19ms
+[2021.04.14-08.11.55:062][609]LogStats:     SeamlessTravel FlushLevelStreaming  -  0.000 s
+[2021.04.14-08.11.55:063][609]LogAIModule: Creating AISystem for world Untitled
+[2021.04.14-08.11.55:063][609]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000022EAC47A200), frame # 3609
+[2021.04.14-08.11.55:064][609]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000022EADF90540), frame # 3609
+[2021.04.14-08.11.55:064][609]LogWorld: Bringing World /Temp/Untitled_1.Untitled up for play (max tick rate 0) at 2021.04.14-09.11.55
+[2021.04.14-08.11.55:065][609]LogWorld: Bringing up level for play took: 0.000438
+[2021.04.14-08.11.55:065][609]LogWorld: Sending NotifyLoadedWorld for LP: LocalPlayer_0 PC: BP_MainPlayerController_C_0
+[2021.04.14-08.11.55:065][609]LogNet: Verbose: NotifyLoadedWorld Begin
+[2021.04.14-08.11.55:066][609]LogNet: VeryVerbose: GetFunctionCallspace Server calling Server function: ServerNotifyLoadedWorld Local
+[2021.04.14-08.11.55:066][609]LogNet: Verbose: NotifyLoadedWorld End
+[2021.04.14-08.11.55:067][609]LogWorld: StartLoadingDestination to: /Game/Levels/Gamelevel
+[2021.04.14-08.11.55:140][612]LogWorld: BeginTearingDown for /Temp/Untitled_1
+[2021.04.14-08.11.55:140][612]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2021.04.14-08.11.55:141][612]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.14-08.11.55:178][612]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000022EADF90540), frame # 3612
+[2021.04.14-08.11.55:178][612]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000022EAC47A200), frame # 3612
+[2021.04.14-08.11.55:179][612]LogUObjectHash: Compacting FUObjectHashTables data took   0.79ms
+[2021.04.14-08.11.55:180][612]LogAIModule: Creating AISystem for world GameLevel
+[2021.04.14-08.11.55:181][612]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000022EF8956800), frame # 3612
+[2021.04.14-08.11.55:181][612]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000022EAC4F6AC0), frame # 3612
+[2021.04.14-08.11.55:186][612]LogLoad: Game class is 'BP_GamesAssignmentTwoGameModeBse_C'
+[2021.04.14-08.11.55:188][612]LogStats:     SeamlessTravel FlushLevelStreaming  -  0.000 s
+[2021.04.14-08.11.55:190][612]LogWorld: Bringing World /Game/Levels/Gamelevel.GameLevel up for play (max tick rate 0) at 2021.04.14-09.11.55
+[2021.04.14-08.11.55:191][612]LogWorld: Bringing up level for play took: 0.002247
+[2021.04.14-08.11.55:191][612]LogWorld: Sending NotifyLoadedWorld for LP: LocalPlayer_0 PC: BP_MainPlayerController_C_0
+[2021.04.14-08.11.55:192][612]LogNet: Verbose: NotifyLoadedWorld Begin
+[2021.04.14-08.11.55:192][612]LogNet: VeryVerbose: GetFunctionCallspace Server calling Server function: ServerNotifyLoadedWorld Local
+[2021.04.14-08.11.55:193][612]LogNet: Verbose: NotifyLoadedWorld End
+[2021.04.14-08.11.55:193][612]LogWorld: ----SeamlessTravel finished in 0.17 seconds ------
+[2021.04.14-08.11.55:196][612]LogTemp: Warning: 4
+[2021.04.14-08.11.55:197][612]LogTemp: Warning: Level: Gamelevel
+[2021.04.14-08.11.55:198][612]LogTemp: Warning: PlayerInterface Here
+[2021.04.14-08.11.55:212][614]PIE: Error: Only Local Player Controllers can be assigned to widgets. BP_MainPlayerController_C_3 is not a Local Player Controller.
+[2021.04.14-08.11.55:213][614]LogTemp: Warning: Level: Gamelevel
+[2021.04.14-08.11.55:214][614]LogTemp: Warning: 4
+[2021.04.14-08.11.57:482][727]LogTemp: Warning: Calling Push
+[2021.04.14-08.11.57:483][727]LogTemp: Warning: Start Location: X=-487.000 Y=-486.000 Z=302.000
+[2021.04.14-08.11.57:483][727]LogTemp: Warning: End Location: X=-477.139 Y=-484.341 Z=301.908
+[2021.04.14-08.12.09:226][609]LogTemp: Warning: Calling Push
+[2021.04.14-08.12.09:226][609]LogTemp: Warning: Start Location: X=304.000 Y=-503.000 Z=278.000
+[2021.04.14-08.12.09:227][609]LogTemp: Warning: End Location: X=294.175 Y=-501.179 Z=278.388
+[2021.04.14-08.12.16:680][972]LogTemp: Warning: Calling Push
+[2021.04.14-08.12.16:681][972]LogTemp: Warning: Start Location: X=-73.000 Y=-411.000 Z=791.000
+[2021.04.14-08.12.16:681][972]LogTemp: Warning: End Location: X=-71.387 Y=-411.069 Z=781.131
+[2021.04.14-08.12.17:943][ 30]LogTemp: Warning: Calling Push
+[2021.04.14-08.12.17:943][ 30]LogTemp: Warning: Start Location: X=-73.000 Y=-411.000 Z=791.000
+[2021.04.14-08.12.17:944][ 30]LogTemp: Warning: End Location: X=-71.387 Y=-411.069 Z=781.131
+[2021.04.14-08.12.18:619][ 61]LogTemp: Warning: Calling Push
+[2021.04.14-08.12.18:620][ 61]LogTemp: Warning: Start Location: X=-73.000 Y=-411.000 Z=791.000
+[2021.04.14-08.12.18:620][ 61]LogTemp: Warning: End Location: X=-71.387 Y=-411.069 Z=781.131
+[2021.04.14-08.12.30:035][593]LogTemp: Warning: Calling Push
+[2021.04.14-08.12.30:036][593]LogTemp: Warning: Start Location: X=-446.000 Y=-108.000 Z=400.000
+[2021.04.14-08.12.30:037][593]LogTemp: Warning: End Location: X=-436.465 Y=-105.797 Z=397.944
+[2021.04.14-08.12.38:624][970]LogTemp: Warning: Calling Push
+[2021.04.14-08.12.38:625][970]LogTemp: Warning: Start Location: X=-689.000 Y=-56.000 Z=345.000
+[2021.04.14-08.12.38:625][970]LogTemp: Warning: End Location: X=-679.083 Y=-56.863 Z=344.047
+[2021.04.14-08.13.00:299][940]LogTemp: Warning: Calling Push
+[2021.04.14-08.13.00:300][940]LogTemp: Warning: Start Location: X=-212.000 Y=294.000 Z=291.000
+[2021.04.14-08.13.00:301][940]LogTemp: Warning: End Location: X=-213.693 Y=284.145 Z=291.115
+[2021.04.14-08.13.04:913][149]LogTemp: Warning: Calling Push
+[2021.04.14-08.13.04:914][149]LogTemp: Warning: Start Location: X=-238.000 Y=298.000 Z=288.000
+[2021.04.14-08.13.04:915][149]LogTemp: Warning: End Location: X=-239.058 Y=288.058 Z=288.175
+[2021.04.14-08.13.07:838][280]LogTemp: Warning: Calling Push
+[2021.04.14-08.13.07:838][280]LogTemp: Warning: Start Location: X=-218.000 Y=-94.000 Z=32.000
+[2021.04.14-08.13.07:839][280]LogTemp: Warning: End Location: X=-217.064 Y=-94.043 Z=41.956
+[2021.04.14-08.13.10:888][420]LogTemp: Warning: Calling Push
+[2021.04.14-08.13.10:889][420]LogTemp: Warning: Start Location: X=-691.000 Y=-60.000 Z=310.000
+[2021.04.14-08.13.10:890][420]LogTemp: Warning: End Location: X=-681.034 Y=-60.780 Z=309.739
+[2021.04.14-08.13.12:290][484]LogTemp: Warning: Calling Push
+[2021.04.14-08.13.12:291][484]LogTemp: Warning: Start Location: X=-691.000 Y=-60.000 Z=310.000
+[2021.04.14-08.13.12:292][484]LogTemp: Warning: End Location: X=-681.034 Y=-60.780 Z=309.739
+[2021.04.14-08.13.12:516][494]LogTemp: Warning: Calling Push
+[2021.04.14-08.13.12:517][494]LogTemp: Warning: Start Location: X=-691.000 Y=-60.000 Z=310.000
+[2021.04.14-08.13.12:518][494]LogTemp: Warning: End Location: X=-681.034 Y=-60.780 Z=309.739
+[2021.04.14-08.13.12:678][502]LogTemp: Warning: Calling Push
+[2021.04.14-08.13.12:680][502]LogTemp: Warning: Start Location: X=-691.000 Y=-60.000 Z=310.000
+[2021.04.14-08.13.12:680][502]LogTemp: Warning: End Location: X=-681.034 Y=-60.780 Z=309.739
+[2021.04.14-08.13.12:854][510]LogTemp: Warning: Calling Push
+[2021.04.14-08.13.12:855][510]LogTemp: Warning: Start Location: X=-691.000 Y=-60.000 Z=310.000
+[2021.04.14-08.13.12:855][510]LogTemp: Warning: End Location: X=-681.034 Y=-60.780 Z=309.739
+[2021.04.14-08.13.13:040][519]LogTemp: Warning: Calling Push
+[2021.04.14-08.13.13:041][519]LogTemp: Warning: Start Location: X=-691.000 Y=-60.000 Z=310.000
+[2021.04.14-08.13.13:041][519]LogTemp: Warning: End Location: X=-681.034 Y=-60.780 Z=309.739
+[2021.04.14-08.13.13:193][526]LogTemp: Warning: Calling Push
+[2021.04.14-08.13.13:194][526]LogTemp: Warning: Start Location: X=-691.000 Y=-60.000 Z=310.000
+[2021.04.14-08.13.13:199][526]LogTemp: Warning: End Location: X=-681.034 Y=-60.780 Z=309.739
+[2021.04.14-08.13.13:361][533]LogTemp: Warning: Calling Push
+[2021.04.14-08.13.13:361][533]LogTemp: Warning: Start Location: X=-691.000 Y=-60.000 Z=310.000
+[2021.04.14-08.13.13:366][533]LogTemp: Warning: End Location: X=-681.034 Y=-60.780 Z=309.739
+[2021.04.14-08.13.13:540][541]LogTemp: Warning: Calling Push
+[2021.04.14-08.13.13:541][541]LogTemp: Warning: Start Location: X=-691.000 Y=-60.000 Z=310.000
+[2021.04.14-08.13.13:542][541]LogTemp: Warning: End Location: X=-681.034 Y=-60.780 Z=309.739
+[2021.04.14-08.13.13:726][549]LogTemp: Warning: Calling Push
+[2021.04.14-08.13.13:727][549]LogTemp: Warning: Start Location: X=-691.000 Y=-60.000 Z=310.000
+[2021.04.14-08.13.13:728][549]LogTemp: Warning: End Location: X=-681.034 Y=-60.780 Z=309.739
+[2021.04.14-08.13.17:051][698]LogTemp: Warning: Calling Push
+[2021.04.14-08.13.17:052][698]LogTemp: Warning: Start Location: X=-691.000 Y=-60.000 Z=310.000
+[2021.04.14-08.13.17:052][698]LogTemp: Warning: End Location: X=-681.034 Y=-60.780 Z=309.739
+[2021.04.14-08.13.17:244][707]LogTemp: Warning: Calling Push
+[2021.04.14-08.13.17:245][707]LogTemp: Warning: Start Location: X=-691.000 Y=-60.000 Z=310.000
+[2021.04.14-08.13.17:248][707]LogTemp: Warning: End Location: X=-681.034 Y=-60.780 Z=309.739
+[2021.04.14-08.13.17:415][715]LogTemp: Warning: Calling Push
+[2021.04.14-08.13.17:416][715]LogTemp: Warning: Start Location: X=-691.000 Y=-60.000 Z=310.000
+[2021.04.14-08.13.17:416][715]LogTemp: Warning: End Location: X=-681.034 Y=-60.780 Z=309.739
+[2021.04.14-08.13.17:591][723]LogTemp: Warning: Calling Push
+[2021.04.14-08.13.17:592][723]LogTemp: Warning: Start Location: X=-691.000 Y=-60.000 Z=310.000
+[2021.04.14-08.13.17:592][723]LogTemp: Warning: End Location: X=-681.034 Y=-60.780 Z=309.739
+[2021.04.14-08.13.17:766][730]LogTemp: Warning: Calling Push
+[2021.04.14-08.13.17:767][730]LogTemp: Warning: Start Location: X=-691.000 Y=-60.000 Z=310.000
+[2021.04.14-08.13.17:768][730]LogTemp: Warning: End Location: X=-681.034 Y=-60.780 Z=309.739
+[2021.04.14-08.13.17:990][740]LogTemp: Warning: Calling Push
+[2021.04.14-08.13.17:991][740]LogTemp: Warning: Start Location: X=-691.000 Y=-60.000 Z=310.000
+[2021.04.14-08.13.17:991][740]LogTemp: Warning: End Location: X=-681.034 Y=-60.780 Z=309.739
+[2021.04.14-08.13.18:178][748]LogTemp: Warning: Calling Push
+[2021.04.14-08.13.18:179][748]LogTemp: Warning: Start Location: X=-691.000 Y=-60.000 Z=310.000
+[2021.04.14-08.13.18:183][748]LogTemp: Warning: End Location: X=-681.034 Y=-60.780 Z=309.739
+[2021.04.14-08.13.18:350][756]LogTemp: Warning: Calling Push
+[2021.04.14-08.13.18:351][756]LogTemp: Warning: Start Location: X=-691.000 Y=-60.000 Z=310.000
+[2021.04.14-08.13.18:352][756]LogTemp: Warning: End Location: X=-681.034 Y=-60.780 Z=309.739
+[2021.04.14-08.13.19:803][ 37]LogTemp: Warning: Calling Push
+[2021.04.14-08.13.19:804][ 37]LogTemp: Warning: Start Location: X=-403.000 Y=10.000 Z=297.275
+[2021.04.14-08.13.19:805][ 37]LogTemp: Warning: End Location: X=-393.000 Y=10.000 Z=297.275
+[2021.04.14-08.13.20:127][142]LogTemp: Warning: Calling Push
+[2021.04.14-08.13.20:128][142]LogTemp: Warning: Start Location: X=-403.000 Y=10.000 Z=297.275
+[2021.04.14-08.13.20:129][142]LogTemp: Warning: End Location: X=-393.000 Y=10.000 Z=297.275
+[2021.04.14-08.13.20:309][200]LogTemp: Warning: Calling Push
+[2021.04.14-08.13.20:310][200]LogTemp: Warning: Start Location: X=-403.000 Y=10.000 Z=297.275
+[2021.04.14-08.13.20:310][200]LogTemp: Warning: End Location: X=-393.000 Y=10.000 Z=297.275
+[2021.04.14-08.13.20:482][256]LogTemp: Warning: Calling Push
+[2021.04.14-08.13.20:484][256]LogTemp: Warning: Start Location: X=-403.000 Y=10.000 Z=297.275
+[2021.04.14-08.13.20:484][256]LogTemp: Warning: End Location: X=-393.000 Y=10.000 Z=297.275
+[2021.04.14-08.13.20:645][308]LogTemp: Warning: Calling Push
+[2021.04.14-08.13.20:646][308]LogTemp: Warning: Start Location: X=-403.000 Y=10.000 Z=297.275
+[2021.04.14-08.13.20:647][308]LogTemp: Warning: End Location: X=-393.000 Y=10.000 Z=297.275
+[2021.04.14-08.13.20:821][364]LogTemp: Warning: Calling Push
+[2021.04.14-08.13.20:822][364]LogTemp: Warning: Start Location: X=-403.000 Y=10.000 Z=297.275
+[2021.04.14-08.13.20:822][364]LogTemp: Warning: End Location: X=-393.000 Y=10.000 Z=297.275
+[2021.04.14-08.13.21:093][453]LogTemp: Warning: Calling Push
+[2021.04.14-08.13.21:094][453]LogTemp: Warning: Start Location: X=-403.000 Y=10.000 Z=297.275
+[2021.04.14-08.13.21:095][453]LogTemp: Warning: End Location: X=-393.000 Y=10.000 Z=297.275
+[2021.04.14-08.13.21:265][508]LogTemp: Warning: Calling Push
+[2021.04.14-08.13.21:267][508]LogTemp: Warning: Start Location: X=-403.000 Y=10.000 Z=297.275
+[2021.04.14-08.13.21:267][508]LogTemp: Warning: End Location: X=-393.000 Y=10.000 Z=297.275

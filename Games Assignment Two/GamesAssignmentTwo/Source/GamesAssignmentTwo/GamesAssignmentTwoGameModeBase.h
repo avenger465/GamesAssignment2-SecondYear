@@ -6,6 +6,9 @@
 #include "GameFramework/GameModeBase.h"
 #include "GamesAssignmentTwoGameModeBase.generated.h"
 
+class UCustomGameInstance;
+class APlayableCharacter;
+
 /**
  * 
  */
@@ -14,4 +17,14 @@ class GAMESASSIGNMENTTWO_API AGamesAssignmentTwoGameModeBase : public AGameModeB
 {
 	GENERATED_BODY()
 	
+public:
+	AGamesAssignmentTwoGameModeBase();
+
+protected:
+	virtual void BeginPlay() override;
+
+private:
+	UPROPERTY()
+		UCustomGameInstance* GameInstanceRef;
+
 };

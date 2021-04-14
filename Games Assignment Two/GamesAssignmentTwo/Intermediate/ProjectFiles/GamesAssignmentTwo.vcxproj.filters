@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\GamesAssignmentTwo.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{EF4B0711-BA16-4A24-AAA1-D33E6599D1FF}</UniqueIdentifier>
+      <UniqueIdentifier>{F5930005-5F26-416A-82A9-51FC44D46F33}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\GamesAssignmentTwo.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{F30DFC02-BB17-4C41-85A3-FE45E602C8C1}</UniqueIdentifier>
+      <UniqueIdentifier>{8DD054B5-A551-4C27-9342-3CA8F2A39923}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\GamesAssignmentTwo">
-      <UniqueIdentifier>{E9381C3A-2347-4104-A414-18D8A4120CA2}</UniqueIdentifier>
+      <UniqueIdentifier>{79031226-3398-4067-B5D9-45C280A60437}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\GamesAssignmentTwo\BaseUserWidget.cpp">
       <Filter>Source\GamesAssignmentTwo</Filter>
@@ -39,6 +39,18 @@
       <Filter>Source\GamesAssignmentTwo</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\GamesAssignmentTwo\Checkpoint.h">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GamesAssignmentTwo\CourseGameModeBase.cpp">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GamesAssignmentTwo\CourseGameModeBase.h">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GamesAssignmentTwo\CourseGameStateBase.cpp">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GamesAssignmentTwo\CourseGameStateBase.h">
       <Filter>Source\GamesAssignmentTwo</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\GamesAssignmentTwo\CustomGameInstance.cpp">
@@ -74,16 +86,46 @@
     <ClInclude Include="..\..\Source\GamesAssignmentTwo\GamesAssignmentTwoGameModeBase.h">
       <Filter>Source\GamesAssignmentTwo</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\GamesAssignmentTwo\MainMenu.cpp">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GamesAssignmentTwo\MainMenu.h">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GamesAssignmentTwo\MainPlayerController.cpp">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GamesAssignmentTwo\MainPlayerController.h">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GamesAssignmentTwo\MenuInterface.cpp">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GamesAssignmentTwo\MenuInterface.h">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\GamesAssignmentTwo\PlayableCharacter.cpp">
       <Filter>Source\GamesAssignmentTwo</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\GamesAssignmentTwo\PlayableCharacter.h">
       <Filter>Source\GamesAssignmentTwo</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\GamesAssignmentTwo\PlayerInterfaceWidget.cpp">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GamesAssignmentTwo\PlayerInterfaceWidget.h">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\GamesAssignmentTwo\RevolvingDoor.cpp">
       <Filter>Source\GamesAssignmentTwo</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\GamesAssignmentTwo\RevolvingDoor.h">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\GamesAssignmentTwo\ServerLobbyGameModeBase.cpp">
+      <Filter>Source\GamesAssignmentTwo</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\GamesAssignmentTwo\ServerLobbyGameModeBase.h">
       <Filter>Source\GamesAssignmentTwo</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\GamesAssignmentTwo\SpinningBar.cpp">

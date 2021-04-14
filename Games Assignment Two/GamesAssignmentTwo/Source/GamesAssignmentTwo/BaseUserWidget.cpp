@@ -16,6 +16,7 @@ void UBaseUserWidget::Setup()
 
 	if (PlayerController != nullptr)
 	{
+		UE_LOG(LogTemp, Warning, TEXT("TRUEEE"));
 		PlayerController->SetInputMode(FInputModeUIOnly());
 		PlayerController->bShowMouseCursor = true;
 	}
@@ -35,4 +36,9 @@ void UBaseUserWidget::SetDown()
 		PlayerController->SetInputMode(FInputModeGameOnly());
 		PlayerController->bShowMouseCursor = false;
 	}
+}
+
+void UBaseUserWidget::SetMenuInterface(IMenuInterface* _MenuInterface)
+{
+	this->MenuInterface = _MenuInterface;
 }

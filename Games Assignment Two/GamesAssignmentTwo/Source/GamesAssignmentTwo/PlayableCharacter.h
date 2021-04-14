@@ -47,9 +47,13 @@ private:
 	void LookUp(float axis);
 	void Turn(float axis);
 	void Dive();
+	void Push();
 
 	UFUNCTION(Server, Reliable, WithValidation)
-		void ServerDive();
+		void RPCServerDive();
+
+	UFUNCTION(Server, Reliable, WithValidation)
+		void RPCServerPush();
 
 	UPROPERTY(EditAnywhere)
 		UCameraComponent* Camera;
@@ -65,5 +69,8 @@ private:
 
 	UPROPERTY()
 		TArray<AActor*> RespawnPoints;
+
+	UPROPERTY()
+		AController* OwnerController;
 
 };

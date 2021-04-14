@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "MenuInterface.h"
 #include "Blueprint/UserWidget.h"
 #include "BaseUserWidget.generated.h"
 
@@ -18,4 +19,9 @@ public:
 	void Setup();
 
 	void SetDown();
+
+	void SetMenuInterface(IMenuInterface* _MenuInterface);
+
+protected:
+	IMenuInterface* MenuInterface;
 };
