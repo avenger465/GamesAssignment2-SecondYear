@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"C:\\Users\\aveng\\Desktop\\Games Assignment Two\\GamesAssignmentTwo\\Source\\GamesAssignmentTwo\\GamesAssignmentTwo.Build.cs",
-		"C:\\Users\\aveng\\Desktop\\Games Assignment Two\\GamesAssignmentTwo\\Source\\GamesAssignmentTwo.Target.cs",
-		"C:\\Users\\aveng\\Desktop\\Games Assignment Two\\GamesAssignmentTwo\\Source\\GamesAssignmentTwoEditor.Target.cs"
+		"C:\\Users\\aveng\\Documents\\GitHub\\GamesAssignment2-SecondYear\\Games Assignment Two\\GamesAssignmentTwo\\Source\\GamesAssignmentTwo\\GamesAssignmentTwo.Build.cs",
+		"C:\\Users\\aveng\\Documents\\GitHub\\GamesAssignment2-SecondYear\\Games Assignment Two\\GamesAssignmentTwo\\Source\\GamesAssignmentTwo.Target.cs",
+		"C:\\Users\\aveng\\Documents\\GitHub\\GamesAssignment2-SecondYear\\Games Assignment Two\\GamesAssignmentTwo\\Source\\GamesAssignmentTwoEditor.Target.cs"
 	],
 	"EngineVersion": "4.25.4"
 }

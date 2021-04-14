@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "GamesAssignmentTwo",
-			"Path": "C:\\Users\\aveng\\Desktop\\Games Assignment Two\\GamesAssignmentTwo\\Source\\GamesAssignmentTwo.Target.cs",
+			"Path": "C:\\Users\\aveng\\Documents\\GitHub\\GamesAssignment2-SecondYear\\Games Assignment Two\\GamesAssignmentTwo\\Source\\GamesAssignmentTwo.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "GamesAssignmentTwoEditor",
-			"Path": "C:\\Users\\aveng\\Desktop\\Games Assignment Two\\GamesAssignmentTwo\\Source\\GamesAssignmentTwoEditor.Target.cs",
+			"Path": "C:\\Users\\aveng\\Documents\\GitHub\\GamesAssignment2-SecondYear\\Games Assignment Two\\GamesAssignmentTwo\\Source\\GamesAssignmentTwoEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]

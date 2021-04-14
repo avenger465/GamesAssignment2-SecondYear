@@ -1,7 +1,7 @@
-C:\Users\aveng\Desktop\Games Assignment Two\GamesAssignmentTwo\Intermediate\Build\Win64\UE4Editor\Development\GamesAssignmentTwo\Definitions.GamesAssignmentTwo.h
-C:\Users\aveng\Desktop\Games Assignment Two\GamesAssignmentTwo\Source\GamesAssignmentTwo\GamesAssignmentTwoGameModeBase.h
+C:\Users\aveng\Documents\GitHub\GamesAssignment2-SecondYear\Games Assignment Two\GamesAssignmentTwo\Intermediate\Build\Win64\UE4Editor\Development\GamesAssignmentTwo\Definitions.GamesAssignmentTwo.h
+C:\Users\aveng\Documents\GitHub\GamesAssignment2-SecondYear\Games Assignment Two\GamesAssignmentTwo\Source\GamesAssignmentTwo\GamesAssignmentTwoGameModeBase.h
 E:\UNREAL ENGINE\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
 E:\UNREAL ENGINE\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
 E:\UNREAL ENGINE\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
 E:\UNREAL ENGINE\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
-C:\Users\aveng\Desktop\Games Assignment Two\GamesAssignmentTwo\Intermediate\Build\Win64\UE4Editor\Inc\GamesAssignmentTwo\GamesAssignmentTwoGameModeBase.generated.h
+C:\Users\aveng\Documents\GitHub\GamesAssignment2-SecondYear\Games Assignment Two\GamesAssignmentTwo\Intermediate\Build\Win64\UE4Editor\Inc\GamesAssignmentTwo\GamesAssignmentTwoGameModeBase.generated.h

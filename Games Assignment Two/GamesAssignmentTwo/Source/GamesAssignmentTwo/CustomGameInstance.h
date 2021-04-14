@@ -22,6 +22,12 @@ public:
 	UCustomGameInstance(const FObjectInitializer& ObjectInitializer);
 	
 	UFUNCTION(Exec)
-		void Warp();
+		void Warp(const FString LevelName);
 
-};
+	UFUNCTION(Exec)
+		void Host();
+
+	UFUNCTION(Exec)
+		void Join(const FString IPAddress);
+
+};	

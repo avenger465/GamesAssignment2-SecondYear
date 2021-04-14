@@ -11,11 +11,30 @@ UCustomGameInstance::UCustomGameInstance(const FObjectInitializer& ObjectInitial
 
 }
 
-void UCustomGameInstance::Warp()
+void UCustomGameInstance::Warp(const FString LevelName)
 {
 	UWorld* World = GetWorld();
 	if (World != nullptr)
 	{
-		World->ServerTravel("/Game/Levels/EndLevel?listen");
+		FString Destination = FString::Printf(TEXT("/Game/Levels/%s?listen"), *LevelName);
+		World->ServerTravel(Destination);
+	}
+}
+
+void UCustomGameInstance::Host()
+{
+	UWorld* World = GetWorld();
+	if (World != nullptr)
+	{
+		World->ServerTravel("/Game/Levels/Lobby?listen");
+	}
+}
+
+void UCustomGameInstance::Join(const FString IPAddress)
+{
+	APlayerController* PlayerControllerRef = GetFirstLocalPlayerController();
+	if (PlayerControllerRef != nullptr)
+	{
+		PlayerControllerRef->ClientTravel(IPAddress, ETravelType::TRAVEL_Absolute);
 	}
 }
