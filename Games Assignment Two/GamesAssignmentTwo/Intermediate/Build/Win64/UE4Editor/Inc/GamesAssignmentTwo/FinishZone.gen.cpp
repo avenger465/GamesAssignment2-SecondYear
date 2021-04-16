@@ -20,6 +20,7 @@ void EmptyLinkFunctionForGeneratedCodeFinishZone() {}
 	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
+	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FTimerHandle();
 	ENGINE_API UClass* Z_Construct_UClass_UShapeComponent_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(AFinishZone::execOnOverlapEnd)
@@ -31,6 +32,20 @@ void EmptyLinkFunctionForGeneratedCodeFinishZone() {}
 		P_FINISH;
 		P_NATIVE_BEGIN;
 		P_THIS->OnOverlapEnd(Z_Param_OverlappedComp,Z_Param_OtherActor,Z_Param_OtherComp,Z_Param_OtherBodyIndex);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(AFinishZone::execServerRPCWarpToEndLevel)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->ServerRPCWarpToEndLevel_Implementation();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(AFinishZone::execServerRPCPlayerFinished)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->ServerRPCPlayerFinished_Implementation();
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(AFinishZone::execOnOverlapBegin)
@@ -46,12 +61,24 @@ void EmptyLinkFunctionForGeneratedCodeFinishZone() {}
 		P_THIS->OnOverlapBegin(Z_Param_OverlappedComp,Z_Param_OtherActor,Z_Param_OtherComp,Z_Param_OtherBodyIndex,Z_Param_bFromSweep,Z_Param_Out_SweepResult);
 		P_NATIVE_END;
 	}
+	static FName NAME_AFinishZone_ServerRPCPlayerFinished = FName(TEXT("ServerRPCPlayerFinished"));
+	void AFinishZone::ServerRPCPlayerFinished()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AFinishZone_ServerRPCPlayerFinished),NULL);
+	}
+	static FName NAME_AFinishZone_ServerRPCWarpToEndLevel = FName(TEXT("ServerRPCWarpToEndLevel"));
+	void AFinishZone::ServerRPCWarpToEndLevel()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_AFinishZone_ServerRPCWarpToEndLevel),NULL);
+	}
 	void AFinishZone::StaticRegisterNativesAFinishZone()
 	{
 		UClass* Class = AFinishZone::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "OnOverlapBegin", &AFinishZone::execOnOverlapBegin },
 			{ "OnOverlapEnd", &AFinishZone::execOnOverlapEnd },
+			{ "ServerRPCPlayerFinished", &AFinishZone::execServerRPCPlayerFinished },
+			{ "ServerRPCWarpToEndLevel", &AFinishZone::execServerRPCWarpToEndLevel },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -196,6 +223,54 @@ void EmptyLinkFunctionForGeneratedCodeFinishZone() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_AFinishZone_ServerRPCPlayerFinished_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFinishZone_ServerRPCPlayerFinished_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "//RPC called from the client to indicate that the player has finished\n" },
+		{ "ModuleRelativePath", "FinishZone.h" },
+		{ "ToolTip", "RPC called from the client to indicate that the player has finished" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFinishZone_ServerRPCPlayerFinished_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFinishZone, nullptr, "ServerRPCPlayerFinished", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00240CC1, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFinishZone_ServerRPCPlayerFinished_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AFinishZone_ServerRPCPlayerFinished_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFinishZone_ServerRPCPlayerFinished()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFinishZone_ServerRPCPlayerFinished_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFinishZone_ServerRPCWarpToEndLevel_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFinishZone_ServerRPCWarpToEndLevel_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "//RPC called from the client to tell the server to perform a serverTravel for all clients\n" },
+		{ "ModuleRelativePath", "FinishZone.h" },
+		{ "ToolTip", "RPC called from the client to tell the server to perform a serverTravel for all clients" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFinishZone_ServerRPCWarpToEndLevel_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFinishZone, nullptr, "ServerRPCWarpToEndLevel", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00240CC1, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFinishZone_ServerRPCWarpToEndLevel_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AFinishZone_ServerRPCWarpToEndLevel_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFinishZone_ServerRPCWarpToEndLevel()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFinishZone_ServerRPCWarpToEndLevel_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_AFinishZone_NoRegister()
 	{
 		return AFinishZone::StaticClass();
@@ -207,6 +282,10 @@ void EmptyLinkFunctionForGeneratedCodeFinishZone() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_EndLevelTimer_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_EndLevelTimer;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_playerRoundLimit_MetaData[];
 #endif
@@ -230,6 +309,8 @@ void EmptyLinkFunctionForGeneratedCodeFinishZone() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFinishZone_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AFinishZone_OnOverlapBegin, "OnOverlapBegin" }, // 2165538279
 		{ &Z_Construct_UFunction_AFinishZone_OnOverlapEnd, "OnOverlapEnd" }, // 3465102257
+		{ &Z_Construct_UFunction_AFinishZone_ServerRPCPlayerFinished, "ServerRPCPlayerFinished" }, // 569873807
+		{ &Z_Construct_UFunction_AFinishZone_ServerRPCWarpToEndLevel, "ServerRPCWarpToEndLevel" }, // 928751187
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFinishZone_Statics::Class_MetaDataParams[] = {
@@ -238,28 +319,44 @@ void EmptyLinkFunctionForGeneratedCodeFinishZone() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFinishZone_Statics::NewProp_EndLevelTimer_MetaData[] = {
+		{ "Category", "FinishZone" },
+		{ "Comment", "//Timer to transition to the End level so there is no\n//player glitching when three players cross the finish line\n" },
+		{ "ModuleRelativePath", "FinishZone.h" },
+		{ "ToolTip", "Timer to transition to the End level so there is no\nplayer glitching when three players cross the finish line" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_AFinishZone_Statics::NewProp_EndLevelTimer = { "EndLevelTimer", nullptr, (EPropertyFlags)0x0040000000020001, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFinishZone, EndLevelTimer), Z_Construct_UScriptStruct_FTimerHandle, METADATA_PARAMS(Z_Construct_UClass_AFinishZone_Statics::NewProp_EndLevelTimer_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFinishZone_Statics::NewProp_EndLevelTimer_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFinishZone_Statics::NewProp_playerRoundLimit_MetaData[] = {
 		{ "Category", "FinishZone" },
+		{ "Comment", "//amount of players needed to finish the obstacle course\n" },
 		{ "ModuleRelativePath", "FinishZone.h" },
+		{ "ToolTip", "amount of players needed to finish the obstacle course" },
 	};
 #endif
 	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AFinishZone_Statics::NewProp_playerRoundLimit = { "playerRoundLimit", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFinishZone, playerRoundLimit), METADATA_PARAMS(Z_Construct_UClass_AFinishZone_Statics::NewProp_playerRoundLimit_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFinishZone_Statics::NewProp_playerRoundLimit_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFinishZone_Statics::NewProp_playersFinished_MetaData[] = {
 		{ "Category", "FinishZone" },
+		{ "Comment", "//The amount of players finished with the obstacle course\n" },
 		{ "ModuleRelativePath", "FinishZone.h" },
+		{ "ToolTip", "The amount of players finished with the obstacle course" },
 	};
 #endif
 	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AFinishZone_Statics::NewProp_playersFinished = { "playersFinished", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFinishZone, playersFinished), METADATA_PARAMS(Z_Construct_UClass_AFinishZone_Statics::NewProp_playersFinished_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFinishZone_Statics::NewProp_playersFinished_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFinishZone_Statics::NewProp_ShapeComponent_MetaData[] = {
 		{ "Category", "FinishZone" },
+		{ "Comment", "//Shape component used for the OnOverlap Dynamics\n" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "FinishZone.h" },
+		{ "ToolTip", "Shape component used for the OnOverlap Dynamics" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFinishZone_Statics::NewProp_ShapeComponent = { "ShapeComponent", nullptr, (EPropertyFlags)0x0040000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFinishZone, ShapeComponent), Z_Construct_UClass_UShapeComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFinishZone_Statics::NewProp_ShapeComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFinishZone_Statics::NewProp_ShapeComponent_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFinishZone_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFinishZone_Statics::NewProp_EndLevelTimer,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFinishZone_Statics::NewProp_playerRoundLimit,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFinishZone_Statics::NewProp_playersFinished,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFinishZone_Statics::NewProp_ShapeComponent,
@@ -291,7 +388,7 @@ void EmptyLinkFunctionForGeneratedCodeFinishZone() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFinishZone, 936489967);
+	IMPLEMENT_CLASS(AFinishZone, 3888415401);
 	template<> GAMESASSIGNMENTTWO_API UClass* StaticClass<AFinishZone>()
 	{
 		return AFinishZone::StaticClass();

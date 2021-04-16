@@ -24,6 +24,7 @@ protected:
 	virtual void BeginPlay() override;
 
 private:
+	//reference to the Game Instance
 	UPROPERTY()
 		UCustomGameInstance* GameInstanceRef;
 

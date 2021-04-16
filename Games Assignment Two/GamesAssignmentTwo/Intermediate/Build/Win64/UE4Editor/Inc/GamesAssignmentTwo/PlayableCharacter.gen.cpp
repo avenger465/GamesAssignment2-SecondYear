@@ -23,63 +23,63 @@ void EmptyLinkFunctionForGeneratedCodePlayableCharacter() {}
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 // End Cross Module References
-	DEFINE_FUNCTION(APlayableCharacter::execRPCServerPush)
+	DEFINE_FUNCTION(APlayableCharacter::execServerRPCPush)
 	{
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		if (!P_THIS->RPCServerPush_Validate())
+		if (!P_THIS->ServerRPCPush_Validate())
 		{
-			RPC_ValidateFailed(TEXT("RPCServerPush_Validate"));
+			RPC_ValidateFailed(TEXT("ServerRPCPush_Validate"));
 			return;
 		}
-		P_THIS->RPCServerPush_Implementation();
+		P_THIS->ServerRPCPush_Implementation();
 		P_NATIVE_END;
 	}
-	DEFINE_FUNCTION(APlayableCharacter::execRPCServerDive)
+	DEFINE_FUNCTION(APlayableCharacter::execServerRPCDive)
 	{
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		if (!P_THIS->RPCServerDive_Validate())
+		if (!P_THIS->ServerRPCDive_Validate())
 		{
-			RPC_ValidateFailed(TEXT("RPCServerDive_Validate"));
+			RPC_ValidateFailed(TEXT("ServerRPCDive_Validate"));
 			return;
 		}
-		P_THIS->RPCServerDive_Implementation();
+		P_THIS->ServerRPCDive_Implementation();
 		P_NATIVE_END;
 	}
-	DEFINE_FUNCTION(APlayableCharacter::execRPCVictorySound)
+	DEFINE_FUNCTION(APlayableCharacter::execClientRPCVictorySound)
 	{
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		P_THIS->RPCVictorySound_Implementation();
+		P_THIS->ClientRPCVictorySound_Implementation();
 		P_NATIVE_END;
 	}
-	static FName NAME_APlayableCharacter_RPCServerDive = FName(TEXT("RPCServerDive"));
-	void APlayableCharacter::RPCServerDive()
+	static FName NAME_APlayableCharacter_ClientRPCVictorySound = FName(TEXT("ClientRPCVictorySound"));
+	void APlayableCharacter::ClientRPCVictorySound()
 	{
-		ProcessEvent(FindFunctionChecked(NAME_APlayableCharacter_RPCServerDive),NULL);
+		ProcessEvent(FindFunctionChecked(NAME_APlayableCharacter_ClientRPCVictorySound),NULL);
 	}
-	static FName NAME_APlayableCharacter_RPCServerPush = FName(TEXT("RPCServerPush"));
-	void APlayableCharacter::RPCServerPush()
+	static FName NAME_APlayableCharacter_ServerRPCDive = FName(TEXT("ServerRPCDive"));
+	void APlayableCharacter::ServerRPCDive()
 	{
-		ProcessEvent(FindFunctionChecked(NAME_APlayableCharacter_RPCServerPush),NULL);
+		ProcessEvent(FindFunctionChecked(NAME_APlayableCharacter_ServerRPCDive),NULL);
 	}
-	static FName NAME_APlayableCharacter_RPCVictorySound = FName(TEXT("RPCVictorySound"));
-	void APlayableCharacter::RPCVictorySound()
+	static FName NAME_APlayableCharacter_ServerRPCPush = FName(TEXT("ServerRPCPush"));
+	void APlayableCharacter::ServerRPCPush()
 	{
-		ProcessEvent(FindFunctionChecked(NAME_APlayableCharacter_RPCVictorySound),NULL);
+		ProcessEvent(FindFunctionChecked(NAME_APlayableCharacter_ServerRPCPush),NULL);
 	}
 	void APlayableCharacter::StaticRegisterNativesAPlayableCharacter()
 	{
 		UClass* Class = APlayableCharacter::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
-			{ "RPCServerDive", &APlayableCharacter::execRPCServerDive },
-			{ "RPCServerPush", &APlayableCharacter::execRPCServerPush },
-			{ "RPCVictorySound", &APlayableCharacter::execRPCVictorySound },
+			{ "ClientRPCVictorySound", &APlayableCharacter::execClientRPCVictorySound },
+			{ "ServerRPCDive", &APlayableCharacter::execServerRPCDive },
+			{ "ServerRPCPush", &APlayableCharacter::execServerRPCPush },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
-	struct Z_Construct_UFunction_APlayableCharacter_RPCServerDive_Statics
+	struct Z_Construct_UFunction_APlayableCharacter_ClientRPCVictorySound_Statics
 	{
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
@@ -87,21 +87,21 @@ void EmptyLinkFunctionForGeneratedCodePlayableCharacter() {}
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APlayableCharacter_RPCServerDive_Statics::Function_MetaDataParams[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APlayableCharacter_ClientRPCVictorySound_Statics::Function_MetaDataParams[] = {
 		{ "ModuleRelativePath", "PlayableCharacter.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_APlayableCharacter_RPCServerDive_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APlayableCharacter, nullptr, "RPCServerDive", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80240CC1, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_APlayableCharacter_RPCServerDive_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_APlayableCharacter_RPCServerDive_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_APlayableCharacter_RPCServerDive()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_APlayableCharacter_ClientRPCVictorySound_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APlayableCharacter, nullptr, "ClientRPCVictorySound", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x01020CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_APlayableCharacter_ClientRPCVictorySound_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_APlayableCharacter_ClientRPCVictorySound_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_APlayableCharacter_ClientRPCVictorySound()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_APlayableCharacter_RPCServerDive_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_APlayableCharacter_ClientRPCVictorySound_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_APlayableCharacter_RPCServerPush_Statics
+	struct Z_Construct_UFunction_APlayableCharacter_ServerRPCDive_Statics
 	{
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
@@ -109,21 +109,23 @@ void EmptyLinkFunctionForGeneratedCodePlayableCharacter() {}
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APlayableCharacter_RPCServerPush_Statics::Function_MetaDataParams[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APlayableCharacter_ServerRPCDive_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "//RPC for the player diving\n" },
 		{ "ModuleRelativePath", "PlayableCharacter.h" },
+		{ "ToolTip", "RPC for the player diving" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_APlayableCharacter_RPCServerPush_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APlayableCharacter, nullptr, "RPCServerPush", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80240CC1, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_APlayableCharacter_RPCServerPush_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_APlayableCharacter_RPCServerPush_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_APlayableCharacter_RPCServerPush()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_APlayableCharacter_ServerRPCDive_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APlayableCharacter, nullptr, "ServerRPCDive", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80240CC1, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_APlayableCharacter_ServerRPCDive_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_APlayableCharacter_ServerRPCDive_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_APlayableCharacter_ServerRPCDive()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_APlayableCharacter_RPCServerPush_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_APlayableCharacter_ServerRPCDive_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_APlayableCharacter_RPCVictorySound_Statics
+	struct Z_Construct_UFunction_APlayableCharacter_ServerRPCPush_Statics
 	{
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
@@ -131,17 +133,19 @@ void EmptyLinkFunctionForGeneratedCodePlayableCharacter() {}
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APlayableCharacter_RPCVictorySound_Statics::Function_MetaDataParams[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APlayableCharacter_ServerRPCPush_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "//RPC for pushing the player in front\n" },
 		{ "ModuleRelativePath", "PlayableCharacter.h" },
+		{ "ToolTip", "RPC for pushing the player in front" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_APlayableCharacter_RPCVictorySound_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APlayableCharacter, nullptr, "RPCVictorySound", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x01020CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_APlayableCharacter_RPCVictorySound_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_APlayableCharacter_RPCVictorySound_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_APlayableCharacter_RPCVictorySound()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_APlayableCharacter_ServerRPCPush_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APlayableCharacter, nullptr, "ServerRPCPush", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80240CC1, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_APlayableCharacter_ServerRPCPush_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_APlayableCharacter_ServerRPCPush_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_APlayableCharacter_ServerRPCPush()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_APlayableCharacter_RPCVictorySound_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_APlayableCharacter_ServerRPCPush_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -202,9 +206,9 @@ void EmptyLinkFunctionForGeneratedCodePlayableCharacter() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_GamesAssignmentTwo,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_APlayableCharacter_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_APlayableCharacter_RPCServerDive, "RPCServerDive" }, // 3370758669
-		{ &Z_Construct_UFunction_APlayableCharacter_RPCServerPush, "RPCServerPush" }, // 2674004371
-		{ &Z_Construct_UFunction_APlayableCharacter_RPCVictorySound, "RPCVictorySound" }, // 3346849441
+		{ &Z_Construct_UFunction_APlayableCharacter_ClientRPCVictorySound, "ClientRPCVictorySound" }, // 1713652822
+		{ &Z_Construct_UFunction_APlayableCharacter_ServerRPCDive, "ServerRPCDive" }, // 3303234003
+		{ &Z_Construct_UFunction_APlayableCharacter_ServerRPCPush, "ServerRPCPush" }, // 1977939145
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayableCharacter_Statics::Class_MetaDataParams[] = {
@@ -221,7 +225,9 @@ void EmptyLinkFunctionForGeneratedCodePlayableCharacter() {}
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APlayableCharacter_Statics::NewProp_OwnerController = { "OwnerController", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlayableCharacter, OwnerController), Z_Construct_UClass_AController_NoRegister, METADATA_PARAMS(Z_Construct_UClass_APlayableCharacter_Statics::NewProp_OwnerController_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlayableCharacter_Statics::NewProp_OwnerController_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APlayableCharacter_Statics::NewProp_RespawnPoints_MetaData[] = {
+		{ "Comment", "//Array of all Respawn points for each level\n" },
 		{ "ModuleRelativePath", "PlayableCharacter.h" },
+		{ "ToolTip", "Array of all Respawn points for each level" },
 	};
 #endif
 	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_APlayableCharacter_Statics::NewProp_RespawnPoints = { "RespawnPoints", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APlayableCharacter, RespawnPoints), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_APlayableCharacter_Statics::NewProp_RespawnPoints_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APlayableCharacter_Statics::NewProp_RespawnPoints_MetaData)) };
@@ -316,7 +322,7 @@ void EmptyLinkFunctionForGeneratedCodePlayableCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(APlayableCharacter, 3735973648);
+	IMPLEMENT_CLASS(APlayableCharacter, 1545447536);
 	template<> GAMESASSIGNMENTTWO_API UClass* StaticClass<APlayableCharacter>()
 	{
 		return APlayableCharacter::StaticClass();

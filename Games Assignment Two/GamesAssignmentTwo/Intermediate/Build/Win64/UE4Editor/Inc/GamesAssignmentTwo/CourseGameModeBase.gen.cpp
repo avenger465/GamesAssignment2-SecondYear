@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeCourseGameModeBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACourseGameModeBase, 2565709917);
+	IMPLEMENT_CLASS(ACourseGameModeBase, 4065196638);
 	template<> GAMESASSIGNMENTTWO_API UClass* StaticClass<ACourseGameModeBase>()
 	{
 		return ACourseGameModeBase::StaticClass();

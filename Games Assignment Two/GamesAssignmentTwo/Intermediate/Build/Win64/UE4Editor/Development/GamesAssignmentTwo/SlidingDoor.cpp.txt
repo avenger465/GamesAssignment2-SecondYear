@@ -1,5 +1,0 @@
-C:\Users\aveng\Documents\GitHub\GamesAssignment2-SecondYear\Games Assignment Two\GamesAssignmentTwo\Intermediate\Build\Win64\UE4Editor\Development\GamesAssignmentTwo\Definitions.GamesAssignmentTwo.h
-C:\Users\aveng\Documents\GitHub\GamesAssignment2-SecondYear\Games Assignment Two\GamesAssignmentTwo\Source\GamesAssignmentTwo\SlidingDoor.h
-E:\UNREAL ENGINE\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/StaticMeshActor.h
-E:\UNREAL ENGINE\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\StaticMeshActor.generated.h
-C:\Users\aveng\Documents\GitHub\GamesAssignment2-SecondYear\Games Assignment Two\GamesAssignmentTwo\Intermediate\Build\Win64\UE4Editor\Inc\GamesAssignmentTwo\SlidingDoor.generated.h

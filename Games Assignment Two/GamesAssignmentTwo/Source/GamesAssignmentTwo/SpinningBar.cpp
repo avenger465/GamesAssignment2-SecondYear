@@ -1,6 +1,6 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
+//Includes needed for the Spinning Bar
 #include "SpinningBar.h"
 #include "Net/UnrealNetwork.h"
 
@@ -20,8 +20,10 @@ void ASpinningBar::BeginPlay()
 {
 	Super::BeginPlay();
 
+	//Check if the Spinning Bar actor has authority on the september
 	if (HasAuthority())
 	{
+		//allow the Spinning bar to be replicated to all clients
 		NetUpdateFrequency = 5;
 		SetReplicates(true);
 		SetReplicateMovement(true);
@@ -32,12 +34,13 @@ void ASpinningBar::BeginPlay()
 void ASpinningBar::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	//Rotator the Spinning Bar by the Rotation Rate
+	//If the the Rotation Rate changes, it will be replicated properly
 	AddActorLocalRotation(FRotator(0.0f, RotationRate * DeltaTime, 0.0f));
-
-
-
 }
 
+//Replicate the Rotation Rate variable
 void ASpinningBar::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
 {
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);

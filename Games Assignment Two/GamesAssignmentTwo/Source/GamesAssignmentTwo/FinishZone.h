@@ -25,18 +25,35 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 private:
+	//Shape component used for the OnOverlap Dynamics
 	UPROPERTY(EditAnywhere)
 		UShapeComponent* ShapeComponent;
 
+	//The amount of players finished with the obstacle course
 	UPROPERTY(EditAnywhere)
 		int playersFinished = 0;
 
+	//amount of players needed to finish the obstacle course
 	UPROPERTY(EditAnywhere)
 		int playerRoundLimit = 3;
+
+	//Timer to transition to the End level so there is no
+	//player glitching when three players cross the finish line
+	UPROPERTY(VisibleAnywhere)
+		FTimerHandle EndLevelTimer;
+
 
 	UFUNCTION()
 		void OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* OtherActor,
 			UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+
+	//RPC called from the client to indicate that the player has finished
+	UFUNCTION(Server, Reliable)
+		void ServerRPCPlayerFinished();
+
+	//RPC called from the client to tell the server to perform a serverTravel for all clients
+	UFUNCTION(Server, Reliable)
+		void ServerRPCWarpToEndLevel();
 
 	UFUNCTION()
 		void OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);

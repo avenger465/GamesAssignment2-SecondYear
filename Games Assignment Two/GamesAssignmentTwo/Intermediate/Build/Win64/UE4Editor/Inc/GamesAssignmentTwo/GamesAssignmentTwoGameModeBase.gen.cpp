@@ -55,7 +55,9 @@ void EmptyLinkFunctionForGeneratedCodeGamesAssignmentTwoGameModeBase() {}
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AGamesAssignmentTwoGameModeBase_Statics::NewProp_GameInstanceRef_MetaData[] = {
+		{ "Comment", "//reference to the Game Instance\n" },
 		{ "ModuleRelativePath", "GamesAssignmentTwoGameModeBase.h" },
+		{ "ToolTip", "reference to the Game Instance" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AGamesAssignmentTwoGameModeBase_Statics::NewProp_GameInstanceRef = { "GameInstanceRef", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AGamesAssignmentTwoGameModeBase, GameInstanceRef), Z_Construct_UClass_UCustomGameInstance_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AGamesAssignmentTwoGameModeBase_Statics::NewProp_GameInstanceRef_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AGamesAssignmentTwoGameModeBase_Statics::NewProp_GameInstanceRef_MetaData)) };
@@ -89,7 +91,7 @@ void EmptyLinkFunctionForGeneratedCodeGamesAssignmentTwoGameModeBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AGamesAssignmentTwoGameModeBase, 3962740952);
+	IMPLEMENT_CLASS(AGamesAssignmentTwoGameModeBase, 936181414);
 	template<> GAMESASSIGNMENTTWO_API UClass* StaticClass<AGamesAssignmentTwoGameModeBase>()
 	{
 		return AGamesAssignmentTwoGameModeBase::StaticClass();

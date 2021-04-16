@@ -15,5 +15,18 @@ class GAMESASSIGNMENTTWO_API ACourseGameModeBase : public AGamesAssignmentTwoGam
 	GENERATED_BODY()
 	
 public:
+	//Called whenever a player goes over the Finish Line
 	void PlayerOverFinishLine();
+
+	//Called when a player is logged into the Obstacle Course level on the server
+	//and increments the amount of players in the level
+	void PostLogin(APlayerController* NewPlayer) override;
+
+	//Called when a player is logged out of the Obstacle Course level on the server
+	//and decrements the amount of players in the level
+	void Logout(AController* Exiting) override;
+
+private:
+	//Number of players in the Obstacle course level
+	uint32 NumberOfPlayers = 0;
 };

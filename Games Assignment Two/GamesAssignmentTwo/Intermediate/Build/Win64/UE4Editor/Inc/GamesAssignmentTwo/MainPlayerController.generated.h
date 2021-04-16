@@ -58,11 +58,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AMainPlayerController); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AMainPlayerController)
 
 
-#define GamesAssignmentTwo_Source_GamesAssignmentTwo_MainPlayerController_h_15_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__PlayerInterfaceWidget() { return STRUCT_OFFSET(AMainPlayerController, PlayerInterfaceWidget); } \
-	FORCEINLINE static uint32 __PPO__PlayerInterfaceDisplay() { return STRUCT_OFFSET(AMainPlayerController, PlayerInterfaceDisplay); }
-
-
+#define GamesAssignmentTwo_Source_GamesAssignmentTwo_MainPlayerController_h_15_PRIVATE_PROPERTY_OFFSET
 #define GamesAssignmentTwo_Source_GamesAssignmentTwo_MainPlayerController_h_12_PROLOG
 #define GamesAssignmentTwo_Source_GamesAssignmentTwo_MainPlayerController_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

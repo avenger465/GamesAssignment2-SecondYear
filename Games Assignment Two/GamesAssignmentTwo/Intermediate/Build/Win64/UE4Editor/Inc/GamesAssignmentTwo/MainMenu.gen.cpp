@@ -304,7 +304,9 @@ void EmptyLinkFunctionForGeneratedCodeMainMenu() {}
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UMainMenu_Statics::NewProp_GameInstanceRef = { "GameInstanceRef", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UMainMenu, GameInstanceRef), Z_Construct_UClass_UCustomGameInstance_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UMainMenu_Statics::NewProp_GameInstanceRef_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMainMenu_Statics::NewProp_GameInstanceRef_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMainMenu_Statics::NewProp_GameModeRef_MetaData[] = {
+		{ "Comment", "//------------//\n// References //\n//------------//\n" },
 		{ "ModuleRelativePath", "MainMenu.h" },
+		{ "ToolTip", "References" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UMainMenu_Statics::NewProp_GameModeRef = { "GameModeRef", nullptr, (EPropertyFlags)0x0040000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UMainMenu, GameModeRef), Z_Construct_UClass_AGamesAssignmentTwoGameModeBase_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UMainMenu_Statics::NewProp_GameModeRef_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMainMenu_Statics::NewProp_GameModeRef_MetaData)) };
@@ -391,8 +393,10 @@ void EmptyLinkFunctionForGeneratedCodeMainMenu() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMainMenu_Statics::NewProp_QuitBtn_MetaData[] = {
 		{ "BindWidget", "" },
+		{ "Comment", "//--------------------------//\n// widgets in the main menu //\n//--------------------------//\n" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "MainMenu.h" },
+		{ "ToolTip", "widgets in the main menu" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UMainMenu_Statics::NewProp_QuitBtn = { "QuitBtn", nullptr, (EPropertyFlags)0x0040000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(UMainMenu, QuitBtn), Z_Construct_UClass_UButton_NoRegister, METADATA_PARAMS(Z_Construct_UClass_UMainMenu_Statics::NewProp_QuitBtn_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_UMainMenu_Statics::NewProp_QuitBtn_MetaData)) };
@@ -438,7 +442,7 @@ void EmptyLinkFunctionForGeneratedCodeMainMenu() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UMainMenu, 94967994);
+	IMPLEMENT_CLASS(UMainMenu, 1851224813);
 	template<> GAMESASSIGNMENTTWO_API UClass* StaticClass<UMainMenu>()
 	{
 		return UMainMenu::StaticClass();

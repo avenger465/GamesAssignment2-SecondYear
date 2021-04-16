@@ -19,13 +19,4 @@ public:
 
 protected:
 	virtual void BeginPlay() override;
-
-private:
-	//Creates a PlayerInterfaceWidget object of type UUserWidget
-	UPROPERTY(EditAnywhere)
-		TSubclassOf<UUserWidget> PlayerInterfaceWidget;
-
-	//UserWidget Component
-	UPROPERTY()
-		UUserWidget* PlayerInterfaceDisplay;
 };

@@ -50,7 +50,9 @@ void EmptyLinkFunctionForGeneratedCodeCourseGameStateBase() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACourseGameStateBase_OnRep_TotalPlayersOverFinishLine_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "//Called when the PlayersOverFinishLine variable is changed\n" },
 		{ "ModuleRelativePath", "CourseGameStateBase.h" },
+		{ "ToolTip", "Called when the PlayersOverFinishLine variable is changed" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ACourseGameStateBase_OnRep_TotalPlayersOverFinishLine_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACourseGameStateBase, nullptr, "OnRep_TotalPlayersOverFinishLine", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ACourseGameStateBase_OnRep_TotalPlayersOverFinishLine_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ACourseGameStateBase_OnRep_TotalPlayersOverFinishLine_Statics::Function_MetaDataParams)) };
@@ -82,7 +84,9 @@ void EmptyLinkFunctionForGeneratedCodeCourseGameStateBase() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACourseGameStateBase_ReturnPlayersFinished_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "//return the amount of players currently over the finih line\n" },
 		{ "ModuleRelativePath", "CourseGameStateBase.h" },
+		{ "ToolTip", "return the amount of players currently over the finih line" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ACourseGameStateBase_ReturnPlayersFinished_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACourseGameStateBase, nullptr, "ReturnPlayersFinished", nullptr, nullptr, sizeof(CourseGameStateBase_eventReturnPlayersFinished_Parms), Z_Construct_UFunction_ACourseGameStateBase_ReturnPlayersFinished_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ACourseGameStateBase_ReturnPlayersFinished_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ACourseGameStateBase_ReturnPlayersFinished_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ACourseGameStateBase_ReturnPlayersFinished_Statics::Function_MetaDataParams)) };
@@ -119,8 +123,8 @@ void EmptyLinkFunctionForGeneratedCodeCourseGameStateBase() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_GamesAssignmentTwo,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ACourseGameStateBase_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_ACourseGameStateBase_OnRep_TotalPlayersOverFinishLine, "OnRep_TotalPlayersOverFinishLine" }, // 2331294779
-		{ &Z_Construct_UFunction_ACourseGameStateBase_ReturnPlayersFinished, "ReturnPlayersFinished" }, // 4188107048
+		{ &Z_Construct_UFunction_ACourseGameStateBase_OnRep_TotalPlayersOverFinishLine, "OnRep_TotalPlayersOverFinishLine" }, // 1553035651
+		{ &Z_Construct_UFunction_ACourseGameStateBase_ReturnPlayersFinished, "ReturnPlayersFinished" }, // 2268503016
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACourseGameStateBase_Statics::Class_MetaDataParams[] = {
@@ -133,7 +137,9 @@ void EmptyLinkFunctionForGeneratedCodeCourseGameStateBase() {}
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACourseGameStateBase_Statics::NewProp_PlayersOverFinishLine_MetaData[] = {
+		{ "Comment", "//current amount of players over the finish line\n//Replicated to all players \n" },
 		{ "ModuleRelativePath", "CourseGameStateBase.h" },
+		{ "ToolTip", "current amount of players over the finish line\nReplicated to all players" },
 	};
 #endif
 	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_ACourseGameStateBase_Statics::NewProp_PlayersOverFinishLine = { "PlayersOverFinishLine", "OnRep_TotalPlayersOverFinishLine", (EPropertyFlags)0x0040000100000020, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACourseGameStateBase, PlayersOverFinishLine), METADATA_PARAMS(Z_Construct_UClass_ACourseGameStateBase_Statics::NewProp_PlayersOverFinishLine_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACourseGameStateBase_Statics::NewProp_PlayersOverFinishLine_MetaData)) };
@@ -167,7 +173,7 @@ void EmptyLinkFunctionForGeneratedCodeCourseGameStateBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACourseGameStateBase, 4007206642);
+	IMPLEMENT_CLASS(ACourseGameStateBase, 180371508);
 	template<> GAMESASSIGNMENTTWO_API UClass* StaticClass<ACourseGameStateBase>()
 	{
 		return ACourseGameStateBase::StaticClass();

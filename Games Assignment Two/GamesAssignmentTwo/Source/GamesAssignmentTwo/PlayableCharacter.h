@@ -29,6 +29,7 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+
 	UPROPERTY(EditAnywhere)
 		int currentCheckpoint = 0;
 
@@ -39,7 +40,7 @@ public:
 		int bPassedCheckpoint[3];
 
 	UFUNCTION(Client, Reliable)
-		void RPCVictorySound();
+		void ClientRPCVictorySound();
 
 private:
 	void MoveForwards(float axis);
@@ -49,11 +50,13 @@ private:
 	void Dive();
 	void Push();
 
+	//RPC for the player diving
 	UFUNCTION(Server, Reliable, WithValidation)
-		void RPCServerDive();
+		void ServerRPCDive();
 
+	//RPC for pushing the player in front
 	UFUNCTION(Server, Reliable, WithValidation)
-		void RPCServerPush();
+		void ServerRPCPush();
 
 	UPROPERTY(EditAnywhere)
 		UCameraComponent* Camera;
@@ -67,6 +70,7 @@ private:
 	UPROPERTY(EditAnywhere)
 		float SpringArmLength = 500.0f;
 
+	//Array of all Respawn points for each level
 	UPROPERTY()
 		TArray<AActor*> RespawnPoints;
 

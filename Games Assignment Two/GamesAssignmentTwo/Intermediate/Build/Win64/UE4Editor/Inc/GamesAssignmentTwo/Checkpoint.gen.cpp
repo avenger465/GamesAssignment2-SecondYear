@@ -236,15 +236,19 @@ void EmptyLinkFunctionForGeneratedCodeCheckpoint() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACheckpoint_Statics::NewProp_CheckpointIndex_MetaData[] = {
 		{ "Category", "Checkpoint" },
+		{ "Comment", "//The checkpoints Index in the world\n" },
 		{ "ModuleRelativePath", "Checkpoint.h" },
+		{ "ToolTip", "The checkpoints Index in the world" },
 	};
 #endif
 	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_ACheckpoint_Statics::NewProp_CheckpointIndex = { "CheckpointIndex", nullptr, (EPropertyFlags)0x0040000000000001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACheckpoint, CheckpointIndex), METADATA_PARAMS(Z_Construct_UClass_ACheckpoint_Statics::NewProp_CheckpointIndex_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACheckpoint_Statics::NewProp_CheckpointIndex_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACheckpoint_Statics::NewProp_ShapeComponent_MetaData[] = {
 		{ "Category", "Checkpoint" },
+		{ "Comment", "//Shape component used for the OnOverlap Dynamics\n" },
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Checkpoint.h" },
+		{ "ToolTip", "Shape component used for the OnOverlap Dynamics" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACheckpoint_Statics::NewProp_ShapeComponent = { "ShapeComponent", nullptr, (EPropertyFlags)0x0040000000080009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACheckpoint, ShapeComponent), Z_Construct_UClass_UShapeComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ACheckpoint_Statics::NewProp_ShapeComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACheckpoint_Statics::NewProp_ShapeComponent_MetaData)) };
@@ -279,7 +283,7 @@ void EmptyLinkFunctionForGeneratedCodeCheckpoint() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACheckpoint, 68723578);
+	IMPLEMENT_CLASS(ACheckpoint, 3152686468);
 	template<> GAMESASSIGNMENTTWO_API UClass* StaticClass<ACheckpoint>()
 	{
 		return ACheckpoint::StaticClass();

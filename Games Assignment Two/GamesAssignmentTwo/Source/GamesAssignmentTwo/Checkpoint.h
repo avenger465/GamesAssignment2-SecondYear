@@ -24,9 +24,12 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 private:
+
+	//Shape component used for the OnOverlap Dynamics
 	UPROPERTY(EditAnywhere)
 		UShapeComponent* ShapeComponent;
 
+	//The checkpoints Index in the world
 	UPROPERTY(EditAnywhere)
 		int CheckpointIndex = 0;
 

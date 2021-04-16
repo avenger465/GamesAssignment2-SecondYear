@@ -18,17 +18,27 @@ struct FHitResult;
 
 #define GamesAssignmentTwo_Source_GamesAssignmentTwo_FinishZone_h_13_SPARSE_DATA
 #define GamesAssignmentTwo_Source_GamesAssignmentTwo_FinishZone_h_13_RPC_WRAPPERS \
+	virtual void ServerRPCWarpToEndLevel_Implementation(); \
+	virtual void ServerRPCPlayerFinished_Implementation(); \
  \
 	DECLARE_FUNCTION(execOnOverlapEnd); \
+	DECLARE_FUNCTION(execServerRPCWarpToEndLevel); \
+	DECLARE_FUNCTION(execServerRPCPlayerFinished); \
 	DECLARE_FUNCTION(execOnOverlapBegin);
 
 
 #define GamesAssignmentTwo_Source_GamesAssignmentTwo_FinishZone_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	virtual void ServerRPCWarpToEndLevel_Implementation(); \
+	virtual void ServerRPCPlayerFinished_Implementation(); \
  \
 	DECLARE_FUNCTION(execOnOverlapEnd); \
+	DECLARE_FUNCTION(execServerRPCWarpToEndLevel); \
+	DECLARE_FUNCTION(execServerRPCPlayerFinished); \
 	DECLARE_FUNCTION(execOnOverlapBegin);
 
 
+#define GamesAssignmentTwo_Source_GamesAssignmentTwo_FinishZone_h_13_EVENT_PARMS
+#define GamesAssignmentTwo_Source_GamesAssignmentTwo_FinishZone_h_13_CALLBACK_WRAPPERS
 #define GamesAssignmentTwo_Source_GamesAssignmentTwo_FinishZone_h_13_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFinishZone(); \
@@ -74,16 +84,21 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFinishZone); \
 #define GamesAssignmentTwo_Source_GamesAssignmentTwo_FinishZone_h_13_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__ShapeComponent() { return STRUCT_OFFSET(AFinishZone, ShapeComponent); } \
 	FORCEINLINE static uint32 __PPO__playersFinished() { return STRUCT_OFFSET(AFinishZone, playersFinished); } \
-	FORCEINLINE static uint32 __PPO__playerRoundLimit() { return STRUCT_OFFSET(AFinishZone, playerRoundLimit); }
+	FORCEINLINE static uint32 __PPO__playerRoundLimit() { return STRUCT_OFFSET(AFinishZone, playerRoundLimit); } \
+	FORCEINLINE static uint32 __PPO__EndLevelTimer() { return STRUCT_OFFSET(AFinishZone, EndLevelTimer); }
 
 
-#define GamesAssignmentTwo_Source_GamesAssignmentTwo_FinishZone_h_10_PROLOG
+#define GamesAssignmentTwo_Source_GamesAssignmentTwo_FinishZone_h_10_PROLOG \
+	GamesAssignmentTwo_Source_GamesAssignmentTwo_FinishZone_h_13_EVENT_PARMS
+
+
 #define GamesAssignmentTwo_Source_GamesAssignmentTwo_FinishZone_h_13_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	GamesAssignmentTwo_Source_GamesAssignmentTwo_FinishZone_h_13_PRIVATE_PROPERTY_OFFSET \
 	GamesAssignmentTwo_Source_GamesAssignmentTwo_FinishZone_h_13_SPARSE_DATA \
 	GamesAssignmentTwo_Source_GamesAssignmentTwo_FinishZone_h_13_RPC_WRAPPERS \
+	GamesAssignmentTwo_Source_GamesAssignmentTwo_FinishZone_h_13_CALLBACK_WRAPPERS \
 	GamesAssignmentTwo_Source_GamesAssignmentTwo_FinishZone_h_13_INCLASS \
 	GamesAssignmentTwo_Source_GamesAssignmentTwo_FinishZone_h_13_STANDARD_CONSTRUCTORS \
 public: \
@@ -96,6 +111,7 @@ public: \
 	GamesAssignmentTwo_Source_GamesAssignmentTwo_FinishZone_h_13_PRIVATE_PROPERTY_OFFSET \
 	GamesAssignmentTwo_Source_GamesAssignmentTwo_FinishZone_h_13_SPARSE_DATA \
 	GamesAssignmentTwo_Source_GamesAssignmentTwo_FinishZone_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	GamesAssignmentTwo_Source_GamesAssignmentTwo_FinishZone_h_13_CALLBACK_WRAPPERS \
 	GamesAssignmentTwo_Source_GamesAssignmentTwo_FinishZone_h_13_INCLASS_NO_PURE_DECLS \
 	GamesAssignmentTwo_Source_GamesAssignmentTwo_FinishZone_h_13_ENHANCED_CONSTRUCTORS \
 private: \

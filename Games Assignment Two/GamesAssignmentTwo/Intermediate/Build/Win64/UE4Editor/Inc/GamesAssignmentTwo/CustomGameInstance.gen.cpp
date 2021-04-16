@@ -97,7 +97,9 @@ void EmptyLinkFunctionForGeneratedCodeCustomGameInstance() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UCustomGameInstance_Host_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "//Create a Listen server and travel to a new level using server travel\n//and delete the main menu widget\n" },
 		{ "ModuleRelativePath", "CustomGameInstance.h" },
+		{ "ToolTip", "Create a Listen server and travel to a new level using server travel\nand delete the main menu widget" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UCustomGameInstance_Host_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UCustomGameInstance, nullptr, "Host", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020601, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UCustomGameInstance_Host_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UCustomGameInstance_Host_Statics::Function_MetaDataParams)) };
@@ -137,7 +139,9 @@ void EmptyLinkFunctionForGeneratedCodeCustomGameInstance() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UCustomGameInstance_Join_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "//Joins a server at a specific IP Address uing client travel\n" },
 		{ "ModuleRelativePath", "CustomGameInstance.h" },
+		{ "ToolTip", "Joins a server at a specific IP Address uing client travel" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UCustomGameInstance_Join_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UCustomGameInstance, nullptr, "Join", nullptr, nullptr, sizeof(CustomGameInstance_eventJoin_Parms), Z_Construct_UFunction_UCustomGameInstance_Join_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UCustomGameInstance_Join_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020601, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UCustomGameInstance_Join_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UCustomGameInstance_Join_Statics::Function_MetaDataParams)) };
@@ -159,7 +163,9 @@ void EmptyLinkFunctionForGeneratedCodeCustomGameInstance() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UCustomGameInstance_LoadMenuWidget_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "//Loads the Menu widget to the players screen\n" },
 		{ "ModuleRelativePath", "CustomGameInstance.h" },
+		{ "ToolTip", "Loads the Menu widget to the players screen" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UCustomGameInstance_LoadMenuWidget_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UCustomGameInstance, nullptr, "LoadMenuWidget", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UCustomGameInstance_LoadMenuWidget_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UCustomGameInstance_LoadMenuWidget_Statics::Function_MetaDataParams)) };
@@ -181,7 +187,9 @@ void EmptyLinkFunctionForGeneratedCodeCustomGameInstance() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UCustomGameInstance_ServerSpawnPlayer_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "//RPC implementation for the ServerSpawnPlayer \n" },
 		{ "ModuleRelativePath", "CustomGameInstance.h" },
+		{ "ToolTip", "RPC implementation for the ServerSpawnPlayer" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UCustomGameInstance_ServerSpawnPlayer_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UCustomGameInstance, nullptr, "ServerSpawnPlayer", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x80220CC0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UCustomGameInstance_ServerSpawnPlayer_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UCustomGameInstance_ServerSpawnPlayer_Statics::Function_MetaDataParams)) };
@@ -203,9 +211,9 @@ void EmptyLinkFunctionForGeneratedCodeCustomGameInstance() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UCustomGameInstance_SpawnPlayer_Statics::Function_MetaDataParams[] = {
-		{ "Comment", "//\x09virtual void LoadMainMenu() override;\n" },
+		{ "Comment", "//Spawns the player from the servers side\n" },
 		{ "ModuleRelativePath", "CustomGameInstance.h" },
-		{ "ToolTip", "virtual void LoadMainMenu() override;" },
+		{ "ToolTip", "Spawns the player from the servers side" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UCustomGameInstance_SpawnPlayer_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UCustomGameInstance, nullptr, "SpawnPlayer", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UCustomGameInstance_SpawnPlayer_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UCustomGameInstance_SpawnPlayer_Statics::Function_MetaDataParams)) };
@@ -245,7 +253,9 @@ void EmptyLinkFunctionForGeneratedCodeCustomGameInstance() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UCustomGameInstance_Warp_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "//Warps all players to a new level using Server Travel\n" },
 		{ "ModuleRelativePath", "CustomGameInstance.h" },
+		{ "ToolTip", "Warps all players to a new level using Server Travel" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UCustomGameInstance_Warp_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UCustomGameInstance, nullptr, "Warp", nullptr, nullptr, sizeof(CustomGameInstance_eventWarp_Parms), Z_Construct_UFunction_UCustomGameInstance_Warp_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UCustomGameInstance_Warp_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020601, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UCustomGameInstance_Warp_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UCustomGameInstance_Warp_Statics::Function_MetaDataParams)) };
@@ -283,12 +293,12 @@ void EmptyLinkFunctionForGeneratedCodeCustomGameInstance() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_GamesAssignmentTwo,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UCustomGameInstance_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UCustomGameInstance_Host, "Host" }, // 1439454641
-		{ &Z_Construct_UFunction_UCustomGameInstance_Join, "Join" }, // 801193810
-		{ &Z_Construct_UFunction_UCustomGameInstance_LoadMenuWidget, "LoadMenuWidget" }, // 612255661
-		{ &Z_Construct_UFunction_UCustomGameInstance_ServerSpawnPlayer, "ServerSpawnPlayer" }, // 487830472
-		{ &Z_Construct_UFunction_UCustomGameInstance_SpawnPlayer, "SpawnPlayer" }, // 707296385
-		{ &Z_Construct_UFunction_UCustomGameInstance_Warp, "Warp" }, // 3586262019
+		{ &Z_Construct_UFunction_UCustomGameInstance_Host, "Host" }, // 253200769
+		{ &Z_Construct_UFunction_UCustomGameInstance_Join, "Join" }, // 3215060138
+		{ &Z_Construct_UFunction_UCustomGameInstance_LoadMenuWidget, "LoadMenuWidget" }, // 595690988
+		{ &Z_Construct_UFunction_UCustomGameInstance_ServerSpawnPlayer, "ServerSpawnPlayer" }, // 2892531724
+		{ &Z_Construct_UFunction_UCustomGameInstance_SpawnPlayer, "SpawnPlayer" }, // 3726113211
+		{ &Z_Construct_UFunction_UCustomGameInstance_Warp, "Warp" }, // 1829703364
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UCustomGameInstance_Statics::Class_MetaDataParams[] = {
@@ -337,7 +347,7 @@ void EmptyLinkFunctionForGeneratedCodeCustomGameInstance() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UCustomGameInstance, 2610564522);
+	IMPLEMENT_CLASS(UCustomGameInstance, 1848850275);
 	template<> GAMESASSIGNMENTTWO_API UClass* StaticClass<UCustomGameInstance>()
 	{
 		return UCustomGameInstance::StaticClass();

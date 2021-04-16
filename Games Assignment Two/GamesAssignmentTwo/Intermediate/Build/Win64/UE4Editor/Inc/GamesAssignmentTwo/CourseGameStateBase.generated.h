@@ -13,20 +13,20 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define GAMESASSIGNMENTTWO_CourseGameStateBase_generated_h
 
-#define GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_16_SPARSE_DATA
-#define GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_16_RPC_WRAPPERS \
+#define GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_15_SPARSE_DATA
+#define GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_15_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execOnRep_TotalPlayersOverFinishLine); \
 	DECLARE_FUNCTION(execReturnPlayersFinished);
 
 
-#define GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+#define GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnRep_TotalPlayersOverFinishLine); \
 	DECLARE_FUNCTION(execReturnPlayersFinished);
 
 
-#define GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_16_INCLASS_NO_PURE_DECLS \
+#define GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesACourseGameStateBase(); \
 	friend struct Z_Construct_UClass_ACourseGameStateBase_Statics; \
@@ -42,7 +42,7 @@ public: \
 	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
 
 
-#define GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_16_INCLASS \
+#define GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_15_INCLASS \
 private: \
 	static void StaticRegisterNativesACourseGameStateBase(); \
 	friend struct Z_Construct_UClass_ACourseGameStateBase_Statics; \
@@ -58,7 +58,7 @@ public: \
 	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
 
 
-#define GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_16_STANDARD_CONSTRUCTORS \
+#define GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ACourseGameStateBase(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ACourseGameStateBase) \
@@ -71,7 +71,7 @@ private: \
 public:
 
 
-#define GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_16_ENHANCED_CONSTRUCTORS \
+#define GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_15_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ACourseGameStateBase(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -84,31 +84,31 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ACourseGameStateBase); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ACourseGameStateBase)
 
 
-#define GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_16_PRIVATE_PROPERTY_OFFSET \
+#define GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_15_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__PlayersOverFinishLine() { return STRUCT_OFFSET(ACourseGameStateBase, PlayersOverFinishLine); }
 
 
-#define GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_13_PROLOG
-#define GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_16_GENERATED_BODY_LEGACY \
+#define GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_12_PROLOG
+#define GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_16_PRIVATE_PROPERTY_OFFSET \
-	GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_16_SPARSE_DATA \
-	GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_16_RPC_WRAPPERS \
-	GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_16_INCLASS \
-	GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_16_STANDARD_CONSTRUCTORS \
+	GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_15_PRIVATE_PROPERTY_OFFSET \
+	GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_15_SPARSE_DATA \
+	GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_15_RPC_WRAPPERS \
+	GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_15_INCLASS \
+	GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_15_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_16_GENERATED_BODY \
+#define GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_16_PRIVATE_PROPERTY_OFFSET \
-	GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_16_SPARSE_DATA \
-	GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_16_INCLASS_NO_PURE_DECLS \
-	GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_16_ENHANCED_CONSTRUCTORS \
+	GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_15_PRIVATE_PROPERTY_OFFSET \
+	GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_15_SPARSE_DATA \
+	GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_15_INCLASS_NO_PURE_DECLS \
+	GamesAssignmentTwo_Source_GamesAssignmentTwo_CourseGameStateBase_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

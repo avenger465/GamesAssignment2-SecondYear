@@ -32,6 +32,10 @@ protected:
 	virtual bool Initialize();
 
 private:
+
+	//--------------------------//
+	// widgets in the main menu //
+	//--------------------------//
 	UPROPERTY(meta = (BindWidget))
 		UButton* QuitBtn;
 
@@ -65,6 +69,10 @@ private:
 	UPROPERTY(meta = (BindWidget))
 		UWidget* HostWidget;
 
+
+	//------------//
+	// References //
+	//------------//
 	UPROPERTY()
 		AGamesAssignmentTwoGameModeBase* GameModeRef;
 

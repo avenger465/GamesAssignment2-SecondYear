@@ -16,10 +16,14 @@ class GAMESASSIGNMENTTWO_API UBaseUserWidget : public UUserWidget
 	GENERATED_BODY()
 	
 public:
+
+	//Function to setup a User Widget
 	void Setup();
 
+	//Function to setdown a user Widget
 	void SetDown();
 
+	//Sets the Menu interface of the widget 
 	void SetMenuInterface(IMenuInterface* _MenuInterface);
 
 protected:

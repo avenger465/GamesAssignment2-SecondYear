@@ -23,7 +23,7 @@ private:
 
 	uint32 NumberOfPlayers = 0;
 
-	uint32 MaxNumberOfPlayers = 2;
+	uint32 NumberOfPlayersToStart = 2;
 
 	FTimerHandle GameStartTimer;
 };

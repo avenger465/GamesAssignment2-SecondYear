@@ -8,13 +8,13 @@
 
 AGamesAssignmentTwoGameModeBase::AGamesAssignmentTwoGameModeBase()
 {
-	//DefaultPawnClass = NULL;
 }
 
 void AGamesAssignmentTwoGameModeBase::BeginPlay()
 {
 	Super::BeginPlay();
 
+	//get a reference to the GameInstance and then spawns the players character
 	UCustomGameInstance* GameInstance = Cast<UCustomGameInstance>(GetGameInstance());
 	GameInstance->SpawnPlayer();
 }

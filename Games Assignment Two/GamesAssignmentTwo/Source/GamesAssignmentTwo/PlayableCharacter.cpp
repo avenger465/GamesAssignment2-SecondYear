@@ -1,6 +1,6 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
+//Includes needed for the Playable character
 #include "PlayableCharacter.h"
 #include "MainPlayerController.h"
 #include "Camera/CameraComponent.h"
@@ -16,6 +16,7 @@ APlayableCharacter::APlayableCharacter()
 	PrimaryActorTick.bCanEverTick = true;
 	bReplicates = true;
 
+	//Setup the SpringArm
 	SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("Spring Arm"));
 	SpringArm->SetupAttachment(RootComponent);
 	SpringArm->SetRelativeLocation(FVector(100.0f, 10.0f, 150.0f));
@@ -25,9 +26,11 @@ APlayableCharacter::APlayableCharacter()
 	SpringArm->TargetArmLength = SpringArmLength;
 	SpringArm->bUsePawnControlRotation = true;
 
+	//Setup the camera
 	Camera = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
 	Camera->SetupAttachment(SpringArm);
 
+	//Set all checkpoints in the bPassedCheckpoint array to false;
 	for (int i = 0; i < 3; ++i)
 	{
 		bPassedCheckpoint[i] = 0;
@@ -40,9 +43,9 @@ void APlayableCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 
+	//get all Respawn points in the level
 	UGameplayStatics::GetAllActorsOfClassWithTag(GetWorld(), ATargetPoint::StaticClass(), "RespawnPoint", RespawnPoints);
 	numberOfCheckpoints = RespawnPoints.Num() - 1;
-	UE_LOG(LogTemp, Warning, TEXT("%i"), RespawnPoints.Num());
 	
 }
 
@@ -75,94 +78,101 @@ void APlayableCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputC
 	PlayerInputComponent->BindAction(TEXT("Push"), IE_Pressed, this, &APlayableCharacter::Push);
 }
 
-
+//Make the character move forwards and backwards
 void APlayableCharacter::MoveForwards(float axis)
 {
 	AddMovementInput(GetActorForwardVector() * axis); // Changes character position forwards and backwards based on key input
 }
 
+//Make the character move left and right
 void APlayableCharacter::Strafe(float axis)
 {
 	AddMovementInput(GetActorRightVector() * axis); // Changes character position left and right based on key input
 }
 
+//Make the character lookUp or Down
 void APlayableCharacter::LookUp(float axis)
 {
 	AddControllerPitchInput(axis); // Changes the pitch (up and down) based on the mouse input 
 }
 
+//Turn the character
 void APlayableCharacter::Turn(float axis)
 {
 	AddControllerYawInput(axis); // Changes the yaw (left and right) based on the mouse input
 }
 
-void APlayableCharacter::RPCServerDive_Implementation()
+//RPC Implementation for the player diving
+void APlayableCharacter::ServerRPCDive_Implementation()
 {
 	LaunchCharacter(GetActorForwardVector() * 1000, false, false);
 }
 
-bool APlayableCharacter::RPCServerDive_Validate()
+//RPC validation for the player diving
+bool APlayableCharacter::ServerRPCDive_Validate()
 {
 	return true;
 }
 
-void APlayableCharacter::RPCServerPush_Implementation()
+//RPC Implementation for pushing the player in front
+void APlayableCharacter::ServerRPCPush_Implementation()
 {
-	UE_LOG(LogTemp, Warning, TEXT("Calling Push"));
+	//Creating Parameter variables for the Line trace
 	FCollisionQueryParams Params;
 	Params.AddIgnoredActor(this);
 	Params.AddIgnoredActor(GetOwner());
 
+	//Checks if the OwnerController exists
 	OwnerController = this->GetController();
 	if (OwnerController == nullptr) return;
 
 	FVector Location; // Used to store location of ray spawnpoint
 	FRotator Rotation; // Used to store rotation of ray spawnpoint
-	//OwnerController->GetPlayerViewPoint(Location, Rotation); // Used to get the location and rotation of viewpoint to shoot from
-	//OwnerController->GetActorForwardVector()
 	OwnerController->GetActorEyesViewPoint(Location, Rotation);
 
-	UE_LOG(LogTemp, Warning, TEXT("Start Location: %s"), *Location.ToString());
+	//get the End Location of the Line Trace
 	FVector End = Location + Rotation.Vector() * 100;
-
-	UE_LOG(LogTemp, Warning, TEXT("End Location: %s"), *End.ToString());
 
 	FHitResult Hit;
 
+	//Perform a Line trace along the Pawn Collision Channel
 	bool success = GetWorld()->LineTraceSingleByChannel(Hit, Location, End, ECollisionChannel::ECC_Pawn, Params); // Checks if ray has hit something
 
+	//check if the line trace is successful
 	if (success)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("Hit Somethingy"));
-		FVector ShotDirection = -Rotation.Vector(); // Gets the shot direction
-		AActor* HitActor = Hit.GetActor(); // Gets the actor been hit
+		//Cast the HitActor to ACharacter class and check if it exists
+		AActor* HitActor = Hit.GetActor();
 		if (Cast<ACharacter>(HitActor))
 		{
 			ACharacter* character = Cast<ACharacter>(HitActor);
-			character->LaunchCharacter(this->GetActorForwardVector() * 500, false, false);
-			UE_LOG(LogTemp, Warning, TEXT("Hit Actor"));
+
+			//launch the character in front of the player;
+			character->LaunchCharacter(this->GetActorForwardVector() * 1000, false, false);
 		}
 	}
-
-	//LaunchCharacter(GetActorForwardVector() * 1000, false, false);
 }
 
-bool APlayableCharacter::RPCServerPush_Validate()
+//RPC validation for pushing the player in front
+bool APlayableCharacter::ServerRPCPush_Validate()
 {
 	return true;
 }
 
+//make the player dive
 void APlayableCharacter::Dive()
 {
-	RPCServerDive();
+	ServerRPCDive();
 }
 
+//Push the player in front 
 void APlayableCharacter::Push()
 {
-	RPCServerPush();
+	ServerRPCPush();
 }
 
-void APlayableCharacter::RPCVictorySound_Implementation()
+//RPC Implementation to play a sound for the user when crossing the finish zone
+void APlayableCharacter::ClientRPCVictorySound_Implementation()
 {
 	UGameplayStatics::PlaySound2D(GetWorld(), VictorySound, 1.0f, 1.0f, 0.0f);
 }

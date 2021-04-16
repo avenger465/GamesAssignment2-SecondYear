@@ -15,27 +15,27 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define GamesAssignmentTwo_Source_GamesAssignmentTwo_PlayableCharacter_h_15_SPARSE_DATA
 #define GamesAssignmentTwo_Source_GamesAssignmentTwo_PlayableCharacter_h_15_RPC_WRAPPERS \
-	virtual bool RPCServerPush_Validate(); \
-	virtual void RPCServerPush_Implementation(); \
-	virtual bool RPCServerDive_Validate(); \
-	virtual void RPCServerDive_Implementation(); \
-	virtual void RPCVictorySound_Implementation(); \
+	virtual bool ServerRPCPush_Validate(); \
+	virtual void ServerRPCPush_Implementation(); \
+	virtual bool ServerRPCDive_Validate(); \
+	virtual void ServerRPCDive_Implementation(); \
+	virtual void ClientRPCVictorySound_Implementation(); \
  \
-	DECLARE_FUNCTION(execRPCServerPush); \
-	DECLARE_FUNCTION(execRPCServerDive); \
-	DECLARE_FUNCTION(execRPCVictorySound);
+	DECLARE_FUNCTION(execServerRPCPush); \
+	DECLARE_FUNCTION(execServerRPCDive); \
+	DECLARE_FUNCTION(execClientRPCVictorySound);
 
 
 #define GamesAssignmentTwo_Source_GamesAssignmentTwo_PlayableCharacter_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	virtual bool RPCServerPush_Validate(); \
-	virtual void RPCServerPush_Implementation(); \
-	virtual bool RPCServerDive_Validate(); \
-	virtual void RPCServerDive_Implementation(); \
-	virtual void RPCVictorySound_Implementation(); \
+	virtual bool ServerRPCPush_Validate(); \
+	virtual void ServerRPCPush_Implementation(); \
+	virtual bool ServerRPCDive_Validate(); \
+	virtual void ServerRPCDive_Implementation(); \
+	virtual void ClientRPCVictorySound_Implementation(); \
  \
-	DECLARE_FUNCTION(execRPCServerPush); \
-	DECLARE_FUNCTION(execRPCServerDive); \
-	DECLARE_FUNCTION(execRPCVictorySound);
+	DECLARE_FUNCTION(execServerRPCPush); \
+	DECLARE_FUNCTION(execServerRPCDive); \
+	DECLARE_FUNCTION(execClientRPCVictorySound);
 
 
 #define GamesAssignmentTwo_Source_GamesAssignmentTwo_PlayableCharacter_h_15_EVENT_PARMS

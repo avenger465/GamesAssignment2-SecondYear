@@ -74,7 +74,7 @@ void EmptyLinkFunctionForGeneratedCodeServerLobbyGameModeBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AServerLobbyGameModeBase, 4017766364);
+	IMPLEMENT_CLASS(AServerLobbyGameModeBase, 65427609);
 	template<> GAMESASSIGNMENTTWO_API UClass* StaticClass<AServerLobbyGameModeBase>()
 	{
 		return AServerLobbyGameModeBase::StaticClass();
