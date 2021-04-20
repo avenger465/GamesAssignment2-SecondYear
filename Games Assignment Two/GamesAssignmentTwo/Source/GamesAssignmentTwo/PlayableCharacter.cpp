@@ -35,7 +35,6 @@ APlayableCharacter::APlayableCharacter()
 	{
 		bPassedCheckpoint[i] = 0;
 	}
-
 }
 
 // Called when the game starts or when spawned

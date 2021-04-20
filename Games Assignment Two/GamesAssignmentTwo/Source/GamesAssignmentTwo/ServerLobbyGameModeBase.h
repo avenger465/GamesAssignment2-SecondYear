@@ -25,5 +25,6 @@ private:
 
 	uint32 NumberOfPlayersToStart = 2;
 
+	//Timer to call when the correct amount of players in the Lobby is reached
 	FTimerHandle GameStartTimer;
 };

@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\GamesAssignmentTwo.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{280706C3-8ECE-4DB4-9AEB-FC5AD6AAF499}</UniqueIdentifier>
+      <UniqueIdentifier>{8CB76DC9-F1F9-4A7D-AA76-73E052CE1146}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\GamesAssignmentTwo.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{C4A5BAB6-AB0B-4661-AAD6-A696E166B22D}</UniqueIdentifier>
+      <UniqueIdentifier>{F2C3C8EA-569A-470A-A441-7A650834A333}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\GamesAssignmentTwo">
-      <UniqueIdentifier>{C1641EDE-99D7-47AA-BA05-AEF02195D8F0}</UniqueIdentifier>
+      <UniqueIdentifier>{B3236C26-43B2-48E1-A106-691F05BA5A31}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\GamesAssignmentTwo\BaseUserWidget.cpp">
       <Filter>Source\GamesAssignmentTwo</Filter>

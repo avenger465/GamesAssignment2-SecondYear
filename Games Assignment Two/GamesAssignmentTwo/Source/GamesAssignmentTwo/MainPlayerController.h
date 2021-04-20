@@ -19,4 +19,24 @@ public:
 
 protected:
 	virtual void BeginPlay() override;
+
+private:
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<UUserWidget> PlayerInterfaceWidget;
+
+	//UserWidget Component
+	UPROPERTY()
+		UUserWidget* PlayerInterfaceDisplay;
+
+	//Timer to call when the PlayerControllers' BeginPlay is called
+	UPROPERTY()
+		FTimerHandle AddToScreenTimer;
+
+	//Amount of time for the timer to use
+	UPROPERTY(EditAnywhere)
+		float Timer = 10.0f;
+
+	//Create a Player Interface widget and then add it to the screen
+	UFUNCTION()
+		void AddToScreen();
 };

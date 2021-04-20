@@ -52,18 +52,15 @@ void AFinishZone::OnOverlapBegin(UPrimitiveComponent* OverlappedComp, AActor* Ot
 				//call a client RPC to play a sound wave
 				character->ClientRPCVictorySound();
 
+				//Increase the amount of players finished and then call a Server RPC
+				//to inrement the amount of players over the finish line in the Game State
+				playersFinished += 1;
+				ServerRPCPlayerFinished();
+
 				//Check if the amount of players finished is over the limit and then start a timer to change the level
-				if (playersFinished >= (playerRoundLimit - 1))
+				if (playersFinished >= playerRoundLimit)
 				{
 					GetWorldTimerManager().SetTimer(EndLevelTimer, this, &AFinishZone::ServerRPCWarpToEndLevel, 5.0f);
-				}
-				else
-				{
-					//If the amount of players finished is not over the limit
-					//Increase the amount of players finished and then call a Server RPC
-					///to inrement the amount of players over the finish line in the Game State
-					playersFinished += 1;
-					ServerRPCPlayerFinished();
 				}
 			}
 		}

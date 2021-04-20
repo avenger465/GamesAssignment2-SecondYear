@@ -51,7 +51,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{86EE9CF5-03E5-48D3-80EE-898F703179D3}</ProjectGuid>
+    <ProjectGuid>{4C594A95-BCCB-468F-95E3-427087833636}</ProjectGuid>
     <Keyword>MakeFileProj</Keyword>
     <RootNamespace>GamesAssignmentTwo</RootNamespace>
     <PlatformToolset>v142</PlatformToolset>

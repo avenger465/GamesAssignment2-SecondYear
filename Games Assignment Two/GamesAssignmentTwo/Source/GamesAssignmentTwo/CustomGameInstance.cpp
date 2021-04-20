@@ -13,10 +13,14 @@
 //Constructor for the GameInstance to add the menu widget and the player character blueprints to the class
 UCustomGameInstance::UCustomGameInstance(const FObjectInitializer& ObjectInitializer)
 {
+	//Gets a reference to the Blueprint of the Main Menu Widget,
+	//use this reference whenever a player joins to be able to load the main menu on their screen
 	ConstructorHelpers::FClassFinder<UUserWidget>MenuWidgetBPClass(TEXT("/Game/Widgets/WBP_MainMenu"));
 	if (!ensure(MenuWidgetBPClass.Class != nullptr)) return;
 	MenuClass = MenuWidgetBPClass.Class;
 
+	//Gets a reference to the Blueprint of the PlayableCharacter,
+	//use this reference whenever a player joins to be able to spawn it in the game
 	static ConstructorHelpers::FClassFinder<APawn> PlayableCharacterBPClass(TEXT("/Game/Blueprints/BP_PlayableCharacter"));
 	if (!ensure(PlayableCharacterBPClass.Class != nullptr)) return;
 	CharacterClass = PlayableCharacterBPClass.Class;
@@ -63,11 +67,13 @@ void UCustomGameInstance::ServerSpawnPlayer_Implementation()
 			UE_LOG(LogTemp, Warning, TEXT("Destroy Character"));
 			PlayerController->GetPawn()->Destroy();
 		}
-		PlayerController->UnPossess(); // Unposses anything already in play
+		//Unposses anything already in play
+		PlayerController->UnPossess(); 
 		PlayerController->SetInputMode(FInputModeGameOnly());
 	}
 
-
+	//Checks if the current level is not the main menu and then spawn the players character
+	//and take possession of it
 	FString CurrentMapName = GetWorld()->GetMapName();
 	if (!CurrentMapName.Contains("MainMenu"))
 	{
@@ -135,6 +141,7 @@ void UCustomGameInstance::OnNetworkFailure(UWorld* World, UNetDriver* NetDriver,
 }
 
 //Loads the Main menu level and travels to it using Client Travel
+//Called if the host leaves and then the client is kicked
 void UCustomGameInstance::LoadMainMenu()
 {
 	APlayerController* PlayerController = GetFirstLocalPlayerController();
